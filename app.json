@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Billboard Spaces",
+    "slug": "billboard-spaces",
+    "version": "1.0.0",
+    "icon": "./assets/splash.png",
+    "userInterfaceStyle": "light",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/splash2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8609fffb-999b-4a34-a69d-64576a4cc72c"
+      }
+    }
+  }
+}
