@@ -10,7 +10,7 @@ export default function Fly() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/fly.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/fly.jpg?alt=media&token=20f38ccc-d7e6-42d9-9df8-83b3d94ef7b4'}}
                     style={{
                         width: '100%',
                         height: 250,

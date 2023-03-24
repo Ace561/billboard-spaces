@@ -10,7 +10,7 @@ export default function Afa() {
         marginTop: 20
       }}>
 
-            <Image source={require('../assets/afaha.jpg')}
+            <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/afaha.jpg?alt=media&token=44fd895e-1e5b-4e30-8709-5ea0a326002d'}}
           style={{
             width: '100%',
             height: 200,

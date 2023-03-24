@@ -10,7 +10,7 @@ export default function Ipa() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/ipa.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ipa.jpg?alt=media&token=f0009be8-2f09-40bd-8920-14b9c113bf82'}}
                     style={{
                         width: '100%',
                         height: 250,

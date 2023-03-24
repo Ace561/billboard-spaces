@@ -10,7 +10,7 @@ export default function Towel() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/towel.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/towel.jpg?alt=media&token=d12aaea6-b483-4867-a91b-6139a22005cc'}}
                     style={{
                         width: '100%',
                         height: 250,

@@ -10,7 +10,7 @@ export default function Uba() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/uba.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/uba.jpg?alt=media&token=452cd3f1-053c-446f-b884-949f5af1af9f'}}
                     style={{
                         width: '100%',
                         height: 250,

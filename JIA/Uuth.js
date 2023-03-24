@@ -10,7 +10,7 @@ export default function Uuth() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/uuth.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/uuth.jpg?alt=media&token=07f522e5-9504-43a9-8a5c-163766d3d911'}}
                     style={{
                         width: '100%',
                         height: 250,

@@ -65,7 +65,7 @@ export default function LargeFormat({ navigation }) {
                     marginLeft: 10
                 }}>
                     <TouchableOpacity onPress={()=>navigation.navigate('Backu')}>
-                        <Image source={require('../assets/2222.jpg')} style={{
+                        <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/2222.jpg?alt=media&token=1e6dbe4f-c170-4f75-a6cc-2e2c72f522ab'}} style={{
                             resizeMode: 'contain',
                             width: 200,
                             height: 150,

@@ -10,7 +10,7 @@ export default function High() {
                 marginTop: 20
             }}>
 
-                <Image  source={require('../assets/high.jpg')} 
+                <Image  source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/high.jpg?alt=media&token=357be990-d473-4614-b411-eaa6bf1e7d28'}} 
                     style={{
                         width: '100%',
                         height: 250,

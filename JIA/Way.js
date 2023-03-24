@@ -10,7 +10,7 @@ export default function Way() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/ibb.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ibb.jpg?alt=media&token=5cd84b49-ea17-4da6-bd46-b40f558dcc27'}}
                     style={{
                         width: '100%',
                         height: 300,

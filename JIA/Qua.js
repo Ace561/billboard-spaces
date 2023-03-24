@@ -10,7 +10,7 @@ export default function Qua() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/akw.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/akw.jpg?alt=media&token=6c53f28b-9f74-4f8a-b59f-f104cb2aa0ba'}}
                     style={{
                         width: '100%',
                         height: 250,

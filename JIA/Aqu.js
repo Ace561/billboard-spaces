@@ -10,7 +10,7 @@ export default function Aqu() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/aaa.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/aaa.jpg?alt=media&token=8967708a-1c6b-4ac7-b32c-a7b9c0cc3a7f'}}
                     style={{
                         width: '100%',
                         height: 250,

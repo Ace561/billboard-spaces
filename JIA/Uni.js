@@ -10,7 +10,7 @@ export default function Uni() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/uniuyo.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/uniuyo.jpg?alt=media&token=dc14dd27-83fe-453c-9b11-fc88198337ea'}}
                     style={{
                         width: '100%',
                         height: 250,

@@ -10,7 +10,7 @@ export default function Add() {
         marginTop: 20
       }}>
 
-        <Image source={require('../assets/nwaniba.jpg')}
+        <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/nwaniba.jpg?alt=media&token=c15e1eb0-c10d-4985-9629-429463012096'}}
           style={{
             width: '100%',
             height: 200,

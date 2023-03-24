@@ -10,7 +10,7 @@ export default function Jun() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/jun.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/jun.jpg?alt=media&token=bd122de5-f2e3-47b3-9de8-aac645339dc2'}}
                     style={{
                         width: '100%',
                         height: 250,

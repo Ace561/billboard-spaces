@@ -10,7 +10,7 @@ export default function Ikot() {
         marginTop: 20
       }}>
 
-        <Image source={require('../assets/ikot.jpg')}
+        <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ikot.jpg?alt=media&token=dcc6b903-a488-464e-baf8-23139493260b'}}
           style={{
             width: '100%',
             height: 220,

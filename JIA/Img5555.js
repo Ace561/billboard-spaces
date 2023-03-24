@@ -10,7 +10,7 @@ export default function Add() {
         marginTop: 20
       }}>
 
-            <Image source={require('../assets/5555.jpg')}
+            <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/5555.jpg?alt=media&token=c4a63a7f-bdcc-4adc-bc87-cfcc6f24cb34'}}
           style={{
             width: '100%',
             height: 200,

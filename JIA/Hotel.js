@@ -10,7 +10,7 @@ export default function Hotel() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/hotel.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/hotel.jpg?alt=media&token=db1b99c6-225b-4f8f-a306-d7d3ed36303f'}}
                     style={{
                         width: '100%',
                         height: 300,

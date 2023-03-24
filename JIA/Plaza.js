@@ -10,7 +10,7 @@ export default function Plaza() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/oando.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/oando.jpg?alt=media&token=0919350a-de0b-40b5-a4d2-c27848f291d9'}}
                     style={{
                         width: '100%',
                         height: 250,

@@ -10,7 +10,7 @@ export default function Add() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/itam.png')}
+                <Image source={{uti:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/itam.png?alt=media&token=f81618f9-44ca-484e-8929-a6fcf6d0aa08'}}
                     style={{
                         width: '100%',
                         height: 220,

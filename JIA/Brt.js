@@ -10,7 +10,7 @@ export default function Brt() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/SSSS.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/SSSS.jpg?alt=media&token=0c508d05-6579-42af-8d82-da122dd2baac'}}
                     style={{
                         width: '100%',
                         height: 250,
@@ -27,7 +27,7 @@ export default function Brt() {
                     48 Sheet
                 </Text>
                 <Text style={{ marginLeft: 10, fontSize: 23, fontWeight: '300', marginTop: 6 }}>
-                Abak Road By State Secrtriat Round About Uyo, Akwa Ibom
+                Abak Road By State Secrtriat Roundabout Uyo, Akwa Ibom
                 </Text>
 
                 

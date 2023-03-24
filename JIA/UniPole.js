@@ -65,7 +65,7 @@ export default function UniPole({ navigation }) {
 
                 }}>
                     <TouchableOpacity onPress={()=> navigation.navigate('Akar')}>
-                        <Image source={require('../assets/akaRoad.jpg')} style={{
+                        <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/akaRd.jpg?alt=media&token=a0281d39-a635-4803-ab86-0adc86f8762c'}} style={{
                             resizeMode: 'contain',
                             width: 190,
                             height: 150,
@@ -86,7 +86,7 @@ export default function UniPole({ navigation }) {
                     marginLeft: 10
                 }}>
                     <TouchableOpacity onPress={()=> navigation.navigate('abak')}>
-                        <Image source={require('../assets/abak.jpg')} style={{
+                        <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/abak.jpg?alt=media&token=c7cdfc68-f0e6-4969-bc4b-4981e3b66647'}} style={{
                             resizeMode: 'contain',
                             width: 190,
                             height: 150,
@@ -111,7 +111,7 @@ export default function UniPole({ navigation }) {
 
                 }}>
                     <TouchableOpacity onPress={()=> navigation.navigate('Ferd')}>
-                        <Image source={require('../assets/kk.jpg')} style={{
+                        <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/kk.jpg?alt=media&token=bfe15f7e-1b8e-4e27-bc6d-a5535eb67be1'}} style={{
                             resizeMode: 'contain',
                             width: 190,
                             height: 150,
@@ -131,7 +131,7 @@ export default function UniPole({ navigation }) {
 
                 }}>
                     <TouchableOpacity onPress={()=> navigation.navigate('Ikot')}>
-                        <Image source={require('../assets/ikot.jpg')} style={{
+                        <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ikot.jpg?alt=media&token=dcc6b903-a488-464e-baf8-23139493260b'}} style={{
                             resizeMode: 'contain',
                             width: 190,
                             height: 150,
@@ -154,7 +154,7 @@ export default function UniPole({ navigation }) {
 
           }}>
             <TouchableOpacity onPress={()=> navigation.navigate('Back')}>
-              <Image source={require('../assets/111.jpg')} style={{
+              <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/111.jpg?alt=media&token=52f24aed-0a4c-4cf8-b559-8dd68b32191e'}} style={{
                 resizeMode: 'cover',
                 width: 190,
                 height: 150,

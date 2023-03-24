@@ -10,7 +10,7 @@ export default function Hhh() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/hhh.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/hhh.jpg?alt=media&token=d683f02b-1475-4595-8256-3fbe185ed766'}}
                     style={{
                         width: '100%',
                         height: 250,

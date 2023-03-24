@@ -10,7 +10,7 @@ export default function Afriq() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/shelter.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/shelter.jpg?alt=media&token=9a01020e-7051-4d5c-b43e-a78be1dcda41'}}
                     style={{
                         width: '100%',
                         height: 250,

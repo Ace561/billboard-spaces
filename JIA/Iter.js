@@ -10,7 +10,7 @@ export default function Iter() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/iter.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/iter.jpg?alt=media&token=81534543-75ea-4c24-bcc2-c45aafb7e7c5'}}
                     style={{
                         width: '100%',
                         height: 250,

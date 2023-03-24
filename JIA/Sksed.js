@@ -10,7 +10,7 @@ export default function Sksed() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/sksEd.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/sksEd.jpg?alt=media&token=648fdc74-4b9c-4491-9c2f-225bb9f88e18'}}
                     style={{
                         width: '100%',
                         height: 250,

@@ -10,7 +10,7 @@ export default function Akard() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/akaRd.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/akaRd.jpg?alt=media&token=a0281d39-a635-4803-ab86-0adc86f8762c'}}
                     style={{
                         width: '100%',
                         height: 210,

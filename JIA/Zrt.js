@@ -10,7 +10,7 @@ export default function Zrt() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/zzz.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/zzz.jpg?alt=media&token=271e5b1a-8779-4458-9851-434585085be6'}}
                     style={{
                         width: '100%',
                         height: 250,

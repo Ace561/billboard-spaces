@@ -2,9 +2,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Log_in from './JIA/Log_in';
-import Onbouding from './sprout_digital/Onbouding';
-import Home from './final_project/Home';
-import First_screen from './final_project/First_screen'
 import Sign_up from './JIA/Sign_up';
 import HomeScreen from './JIA/HomeScreen';
 import Ferd from './JIA/Ferd';
@@ -13,7 +10,6 @@ import Portrait from './JIA/Portrait';
 import Sheet48 from './JIA/Sheet48';
 import LargeFormat from './JIA/LargeFormat';
 import UniPole from './JIA/UniPole';
-import Your from './sprout_digital/Your';
 import Img1111 from './JIA/Img1111';
 import Add from './JIA/Add';
 import Aka from './JIA/Aka';
@@ -52,7 +48,6 @@ import Iter from './JIA/Iter';
 import Uba from './JIA/Uba';
 import Uni from './JIA/Uni';
 import Ipa from './JIA/Ipa';
-import Iuu from './JIA/Iuu';
 
 
 
@@ -63,9 +58,6 @@ function App() {
     // <Onbouding/>
     <NavigationContainer >
       <Stack.Navigator>
-        {/* <Stack.Screen options={{ headerShown: false }}name="Onbouding" component={Onbouding} /> */}
-        {/* <Stack.Screen options={{ headerShown: false }}name="assign" component={Home} /> */}
-        {/* <Stack.Screen options={{ headerShown: false }}name="Home" component={First_screen} /> */}
         <Stack.Screen options={{ headerShown: false }} name="Home" component={HomeScreen} />
         <Stack.Screen options={{}} name="Large format" component={LargeFormat} />
         <Stack.Screen options={{}} name="Back" component={Img1111} />
@@ -106,7 +98,6 @@ function App() {
         <Stack.Screen options={{ title: 'Back' }} name="Uni" component={Uni} />
         <Stack.Screen options={{ title: 'Back' }} name="Uba" component={Uba} />
         <Stack.Screen options={{ title: 'Back' }} name="Ipa" component={Ipa} />
-        <Stack.Screen options={{ title: 'Back' }} name="Iuu" component={Iuu} />
         <Stack.Screen options={{ headerShown: false }} name="sign_up" component={Sign_up} />
         <Stack.Screen options={{ headerShown: false }} name="Log_in" component={Log_in} />
 
@@ -115,7 +106,6 @@ function App() {
         <Stack.Screen options={{}} name="Akwa Ibom" component={AkwaIbom} />
         <Stack.Screen options={{}} name="Unipole" component={UniPole} />
         <Stack.Screen options={{}} name="48 sheet" component={Sheet48} />
-        <Stack.Screen options={{ headerShown: false }} name="Your Profile" component={Your} />
       </Stack.Navigator>
     </NavigationContainer>
   )

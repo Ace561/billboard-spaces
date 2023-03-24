@@ -10,7 +10,7 @@ export default function Point() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/point.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/point.jpg?alt=media&token=74297a7d-ffe7-45a2-baaa-5b973a7e9b1c'}}
                     style={{
                         width: '100%',
                         height: 250,

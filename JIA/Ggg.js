@@ -10,7 +10,7 @@ export default function Ggg() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/ggg.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ggg.jpg?alt=media&token=30a4dd0d-b0c7-4408-b0c4-7f187be45cef'}}
                     style={{
                         width: '100%',
                         height: 250,

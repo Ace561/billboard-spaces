@@ -10,7 +10,7 @@ export default function Ferd() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/kk.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/kk.jpg?alt=media&token=bfe15f7e-1b8e-4e27-bc6d-a5535eb67be1'}}
                     style={{
                         width: '100%',
                         height: 260,

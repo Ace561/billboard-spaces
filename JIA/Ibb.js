@@ -10,7 +10,7 @@ export default function Ibb() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/nnpc.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/nnpc.jpg?alt=media&token=af0eeb5e-8d0f-4a49-8649-adb7dfb8c177'}}
                     style={{
                         width: '100%',
                         height: 250,

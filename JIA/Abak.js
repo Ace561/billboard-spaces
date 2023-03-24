@@ -10,7 +10,7 @@ export default function Abak() {
                 marginTop: 20
             }}>
 
-                <Image source={require('../assets/abak.jpg')}
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/abak.jpg?alt=media&token=c7cdfc68-f0e6-4969-bc4b-4981e3b66647'}}
                     style={{
                         width: '100%',
                         height: 200,
