@@ -1,15 +1,27 @@
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, Alert, BackHandler } from 'react-native'
-import React from 'react'
+import React, { useContext } from 'react'
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { AuthContext } from '../context/authContext';
 
 export default function Log_in({ navigation }) {
   
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const { login } = useContext(AuthContext)
+    // todo use this function on the login button
+    const handleLogin = () => {
+        login(email, password)
+          .then(() => {
+            // navigate to the home screen or show a success message
+          })
+          .catch(error => {
+            // show an error message
+          });
+      };
 
   return (
     <View style={styles.main}>

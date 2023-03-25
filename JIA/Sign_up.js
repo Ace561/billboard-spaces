@@ -1,14 +1,26 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { useContext } from 'react'
 import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { useState } from 'react';
+import { AuthContext } from '../context/authContext';
 
 
 
 export default function Sign_up({ navigation }) {  
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const { register } = useContext(AuthContext)
+    // todo use this function on the signup button
+    const handleRegister = () => {
+        register(username, email, password)
+          .then(() => {
+            // navigate to the home screen or show a success message
+          })
+          .catch(error => {
+            // show an error message
+          });
+      };
     return (
         <View style={styles.main}>
             <View style={{

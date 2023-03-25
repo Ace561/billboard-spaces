@@ -48,6 +48,7 @@ import Iter from './JIA/Iter';
 import Uba from './JIA/Uba';
 import Uni from './JIA/Uni';
 import Ipa from './JIA/Ipa';
+import { AuthProvider } from './context/authContext';
 
 
 
@@ -56,6 +57,8 @@ const Stack = createNativeStackNavigator()
 function App() {
   return (
     // <Onbouding/>
+    <AuthProvider>
+
     <NavigationContainer >
       <Stack.Navigator>
         <Stack.Screen options={{ headerShown: false }} name="Home" component={HomeScreen} />
@@ -108,6 +111,7 @@ function App() {
         <Stack.Screen options={{}} name="48 sheet" component={Sheet48} />
       </Stack.Navigator>
     </NavigationContainer>
+    </AuthProvider>
   )
 };
 export default App;
