@@ -32,10 +32,7 @@ export const AuthProvider = ({ children }) => {
     
   };
 
-  // if (loading) {
-  //   return null;
-  // }
-
+ 
   return (
     <AuthContext.Provider
       value={{
