@@ -32,9 +32,9 @@ export const AuthProvider = ({ children }) => {
     
   };
 
-  if (loading) {
-    return null;
-  }
+  // if (loading) {
+  //   return null;
+  // }
 
   return (
     <AuthContext.Provider
