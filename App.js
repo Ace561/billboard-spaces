@@ -52,7 +52,7 @@ import { AuthProvider } from './context/authContext';
 
 
 
-const Tab = createBottomTabNavigator()
+// const Tab = createBottomTabNavigator()
 const Stack = createNativeStackNavigator()
 function App() {
   return (
@@ -62,7 +62,7 @@ function App() {
     <NavigationContainer >
       <Stack.Navigator>
         <Stack.Screen options={{ headerShown: false }} name="Home" component={HomeScreen} />
-        <Stack.Screen options={{}} name="Large format" component={LargeFormat} />
+        <Stack.Screen options={{}} name="Large format" component={LargeFormat}/>
         <Stack.Screen options={{}} name="Back" component={Img1111} />
         <Stack.Screen options={{ title: 'Back' }} name="Aka" component={Aka} />
         <Stack.Screen options={{ title: 'Back' }} name="Backu" component={Img2222} />

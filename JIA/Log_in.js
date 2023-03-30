@@ -8,20 +8,22 @@ import { useState } from 'react';
 import { AuthContext } from '../context/authContext';
 
 export default function Log_in({ navigation }) {
-  
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const { login } = useContext(AuthContext)
-    // todo use this function on the login button
-    const handleLogin = () => {
-        login(email, password)
-          .then(() => {
-            // navigate to the home screen or show a success message
-          })
-          .catch(error => {
-            // show an error message
-          });
-      };
+  // todo use this function on the login button
+  const handleLogin = () => {
+    login(email, password)
+      .then(() => {
+        navigation.navigate('Add')
+      })
+      .catch(error => {
+        // console.log(error.response.data);
+        alert('Wrong email or password')
+        // error('error message')
+      });
+  };
 
   return (
     <View style={styles.main}>
@@ -84,8 +86,8 @@ export default function Log_in({ navigation }) {
             </Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={() =>
-          navigation.navigate('Add')
+        <TouchableOpacity onPress={
+          handleLogin
         }>
           <View style={{
             marginTop: 40, width: 330, height: 50,

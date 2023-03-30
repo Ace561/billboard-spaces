@@ -417,6 +417,7 @@ export default function HomeScreen({ navigation }) {
             </TouchableOpacity>
           </View>
         </View>
+        
 
       </ScrollView>
 
@@ -427,8 +428,6 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   main: {
     flex: 1,
-    minWidth: '100%',
-    minHeight: '100%'
 
   }
 })

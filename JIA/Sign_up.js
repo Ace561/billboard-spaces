@@ -10,15 +10,21 @@ import { AuthContext } from '../context/authContext';
 export default function Sign_up({ navigation }) {  
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [username, setUsername] = useState('')
     const { register } = useContext(AuthContext)
     // todo use this function on the signup button
+    function logged(){
+console.log();
+console.log("im here");
+    }
     const handleRegister = () => {
         register(username, email, password)
-          .then(() => {
+          .then(() =>  {
+            navigation.navigate('Add')
             // navigate to the home screen or show a success message
           })
           .catch(error => {
-            // show an error message
+            alert('Wrong email or password')
           });
       };
     return (
@@ -49,6 +55,8 @@ export default function Sign_up({ navigation }) {
                             marginLeft: 20, width: 200
                         }}
                         placeholder="Enter Full Name"
+                        value={username}
+                        onChangeText={text => setUsername(text)}
                     />
                 </View>
                 <View style={{
@@ -87,8 +95,8 @@ export default function Sign_up({ navigation }) {
                         onChangeText={text => setPassword(text)}
                     />
                 </View>
-                <TouchableOpacity onPress={() =>
-                    navigation.navigate('Add')
+                <TouchableOpacity  onPress={
+                    handleRegister
                 }>
                     <View style={{
                         marginTop: 40, width: 330, height: 50,

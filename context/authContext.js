@@ -14,6 +14,7 @@ export const AuthProvider = ({ children }) => {
   const register = (username, email, password) => {
     return axios.post(`${API_BASE_URL}/register`, { username, email, password })
       .then(response => {
+        console.log(response.data);
         setUser(response.data.user);
         
       });
@@ -22,6 +23,7 @@ export const AuthProvider = ({ children }) => {
   const login = (email, password) => {
     return axios.post(`${API_BASE_URL}/login`, { email, password })
       .then(response => {
+        console.log(response.data);
         setUser(response.data.user);
       
       });
