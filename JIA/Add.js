@@ -227,7 +227,7 @@ export default function Add({ navigation }) {
             borderWidth: 1,
             borderColor: '#34B7F1'
           }}>
-            <Text style={{ color: '#34B7F1' }}>Send mail</Text>
+            <Text style={{ color: '#34B7F1' }}>Submmit your mail</Text>
             <MaterialCommunityIcons name="gmail" size={24} color="#34B7F1" style={{ marginLeft: 5 }} />
           </View>
         </TouchableOpacity>

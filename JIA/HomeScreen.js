@@ -74,24 +74,9 @@ export default function HomeScreen({ navigation }) {
           }}>
             Categories
           </Text>
-
-          {/* <View style={{
-            // backgroundColor: 'red',
-            marginLeft: 180,
-            justifyContent: 'center'
-          }}>
-            <TouchableOpacity>
-              <Text style={{
-                color: '#416FDF'
-              }}>View all</Text>
-            </TouchableOpacity>
-
-          </View> */}
         </View>
         <ScrollView horizontal={true}
           showsHorizontalScrollIndicator={false} style={{
-            // flexDirection:'row',
-            // backgroundColor:'red'
           }}>
 
           <View style={{
@@ -217,14 +202,10 @@ export default function HomeScreen({ navigation }) {
         </View>
         <View style={{
           flexDirection: 'row',
-          // marginTop:20
-
         }}>
           <View style={{
             width: 200,
             height: 220,
-            //  backgroundColor:'red',
-
           }}>
             <TouchableOpacity onPress={() => navigation.navigate('Aka')}>
               <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/aka.jpg?alt=media&token=ebfe604b-c7e0-43af-a09c-a2d1d6f3c57a'}} style={{
