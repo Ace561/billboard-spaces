@@ -25,26 +25,26 @@ export default function Add() {
                     Itam Junction By Itam Market Uyo, Akwa Ibom
                 </Text>
                 <View style={styles.buttons}>
- <View style={styles.whatsapp}>
-                    <TouchableOpacity onPress={() => (
-                        Linking.openURL("whatsapp://send?phone=+234 8100652910&text=Hi good day i want to verify the Portrait at Itam Junction By Itam Market Uyo")
-                    )}>
-                        <View style={styles.verify}>
-                            <Text style={{ color: '#34B7F1' }}>Verify the site</Text>
-                            <FontAwesome name="whatsapp" size={24} color="#34B7F1" style={{ marginLeft: 5 }} />
-                        </View>
-                    </TouchableOpacity>
+                    <View style={styles.whatsapp}>
+                        <TouchableOpacity onPress={() => (
+                            Linking.openURL("whatsapp://send?phone=+234 8100652910&text=Hi good day i want to verify the Portrait at Itam Junction By Itam Market Uyo")
+                        )}>
+                            <View style={styles.verify}>
+                                <Text style={{ color: '#34B7F1' }}>Verify the site</Text>
+                                <FontAwesome name="whatsapp" size={24} color="#34B7F1" style={{ marginLeft: 5 }} />
+                            </View>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={styles.telebutton}>
+                        <TouchableOpacity onPress={() => (
+                            Linking.openURL('tel:+234 8100652910')
+                        )}>
+                            <View style={styles.telephone}>
+                                <Text style={{ color: 'white' }}>Mobile number</Text>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
                 </View>
-                <View style={styles.telebutton}>
-                    <TouchableOpacity onPress={() => (
-                        Linking.openURL('tel:+234 8100652910')
-                    )}>
-                        <View style={styles.telephone}>
-                            <Text style={{ color: 'white' }}>Mobile number</Text>
-                        </View>
-                    </TouchableOpacity>
-                </View>
-                </View>               
             </View>
 
         </View>
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     },
     Total: {
         backgroundColor: '#ffffff',
-        height: 300,
+        height: 290,
         marginTop: 20
     }
 })

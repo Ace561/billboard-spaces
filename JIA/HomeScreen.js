@@ -14,13 +14,14 @@ export default function HomeScreen({ navigation }) {
         flexDirection: 'row'
       }}>
         <Text style={{
-          marginTop: 15, 
+          marginTop: 15,
           fontSize: 23, marginLeft: 20,
           fontStyle: 'italic', color: '#416FDF'
         }}>BILLBOARD</Text>
         <Text style={{
-           marginTop: 15,
-           fontSize: 23, fontStyle: 'italic' }}> SPACES</Text>
+          marginTop: 15,
+          fontSize: 23, fontStyle: 'italic'
+        }}> SPACES</Text>
 
       </View>
       <ScrollView style={{
@@ -33,23 +34,23 @@ export default function HomeScreen({ navigation }) {
           justifyContent: 'center',
           marginLeft: 12,
           // backgroundColor:'red',
-          width:360,
+          width: 360,
           height: 140
         }}>
-          <TouchableOpacity  onPress={() => navigation.navigate('sign_up')}>
-            <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ass.png?alt=media&token=f76f317e-9e69-4d39-9c78-96a746a56621'}} style={{
-            resizeMode: 'contain',
-            width: 350,
-            height: 200,
-          }} />
+          <TouchableOpacity onPress={() => navigation.navigate('sign_up')}>
+            <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ass.png?alt=media&token=f76f317e-9e69-4d39-9c78-96a746a56621' }} style={{
+              resizeMode: 'contain',
+              width: 350,
+              height: 200,
+            }} />
           </TouchableOpacity>
-          
+
         </View>
 
         <View style={{
           flexDirection: 'row',
           marginTop: 20,
-          backgroundColor:'#a9a9a9'
+          backgroundColor: '#a9a9a9'
         }}>
           <Text style={{
             fontSize: 24,
@@ -162,13 +163,13 @@ export default function HomeScreen({ navigation }) {
             // backgroundColor:'red',
 
           }}>
+            <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/111.jpg?alt=media&token=52f24aed-0a4c-4cf8-b559-8dd68b32191e' }} style={{
+              resizeMode: 'cover',
+              width: 190,
+              height: 150,
+              marginLeft: 5
+            }} />
             <TouchableOpacity onPress={() => navigation.navigate('Back')}>
-              <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/111.jpg?alt=media&token=52f24aed-0a4c-4cf8-b559-8dd68b32191e'}} style={{
-                resizeMode: 'cover',
-                width: 190,
-                height: 150,
-                marginLeft: 5
-              }} />
               <Text style={{ marginLeft: 10 }}>
                 Unipole
               </Text>
@@ -184,13 +185,12 @@ export default function HomeScreen({ navigation }) {
             // backgroundColor:'red',
             marginLeft: 10
           }}>
+            <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/2222.jpg?alt=media&token=1e6dbe4f-c170-4f75-a6cc-2e2c72f522ab' }} style={{
+              resizeMode: 'stretch',
+              width: 200,
+              height: 150,
+            }} />
             <TouchableOpacity onPress={() => navigation.navigate('Backu')}>
-              <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/2222.jpg?alt=media&token=1e6dbe4f-c170-4f75-a6cc-2e2c72f522ab'}} style={{
-                resizeMode: 'stretch',
-                width: 200,
-                height: 150,
-
-              }} />
               <Text>
                 Large Format
               </Text>
@@ -207,13 +207,13 @@ export default function HomeScreen({ navigation }) {
             width: 200,
             height: 220,
           }}>
+            <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/aka.jpg?alt=media&token=ebfe604b-c7e0-43af-a09c-a2d1d6f3c57a' }} style={{
+              resizeMode: 'contain',
+              width: 190,
+              height: 150,
+              marginLeft: 5
+            }} />
             <TouchableOpacity onPress={() => navigation.navigate('Aka')}>
-              <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/aka.jpg?alt=media&token=ebfe604b-c7e0-43af-a09c-a2d1d6f3c57a'}} style={{
-                resizeMode: 'contain',
-                width: 190,
-                height: 150,
-                marginLeft: 5
-              }} />
               <Text style={{ marginLeft: 10 }}>
                 48 sheet
               </Text>
@@ -229,13 +229,12 @@ export default function HomeScreen({ navigation }) {
             // backgroundColor:'red',
             marginLeft: 10
           }}>
+            <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/6666.jpg?alt=media&token=bc0f416b-371e-4c97-9594-d838d743acfb' }} style={{
+              resizeMode: 'contain',
+              width: 200,
+              height: 150
+            }} />
             <TouchableOpacity onPress={() => navigation.navigate('Img6666')}>
-              <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/6666.jpg?alt=media&token=bc0f416b-371e-4c97-9594-d838d743acfb'}} style={{
-                resizeMode: 'contain',
-                width: 200,
-                height: 150
-
-              }} />
               <Text>
                 48 sheet
               </Text>
@@ -257,14 +256,13 @@ export default function HomeScreen({ navigation }) {
             //  backgroundColor:'red',
 
           }}>
+            <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/5555.jpg?alt=media&token=c4a63a7f-bdcc-4adc-bc87-cfcc6f24cb34' }} style={{
+              resizeMode: 'cover',
+              width: 190,
+              height: 150,
+              marginLeft: 5
+            }} />
             <TouchableOpacity onPress={() => navigation.navigate('Img5555')}>
-              <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/5555.jpg?alt=media&token=c4a63a7f-bdcc-4adc-bc87-cfcc6f24cb34'}} style={{
-                resizeMode: 'cover',
-                width: 190,
-                height: 150,
-                marginLeft: 5
-
-              }} />
               <Text style={{ marginLeft: 10 }}>
                 Portrait
               </Text>
@@ -280,13 +278,12 @@ export default function HomeScreen({ navigation }) {
             // backgroundColor:'red',
             marginLeft: 10
           }}>
+            <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/nwaniba.jpg?alt=media&token=c15e1eb0-c10d-4985-9629-429463012096' }} style={{
+              // resizeMode:'cover',
+              width: 200,
+              height: 150
+            }} />
             <TouchableOpacity onPress={() => navigation.navigate('Nwaniba')}>
-              <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/nwaniba.jpg?alt=media&token=c15e1eb0-c10d-4985-9629-429463012096'}} style={{
-                // resizeMode:'cover',
-                width: 200,
-                height: 150
-
-              }} />
               <Text>
                 48 Sheet
               </Text>
@@ -308,14 +305,13 @@ export default function HomeScreen({ navigation }) {
             // backgroundColor:'red',
 
           }}>
+            <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/itam.png?alt=media&token=f81618f9-44ca-484e-8929-a6fcf6d0aa08' }} style={{
+              // resizeMode: 'contain',
+              width: 200,
+              height: 150,
+              marginLeft: 5
+            }} />
             <TouchableOpacity onPress={() => navigation.navigate('Itam')}>
-              <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/itam.png?alt=media&token=f81618f9-44ca-484e-8929-a6fcf6d0aa08'}} style={{
-                // resizeMode: 'contain',
-                width: 200,
-                height: 150,
-                marginLeft: 5
-
-              }} />
               <Text style={{ marginLeft: 10 }}>
                 Portrait
               </Text>
@@ -328,16 +324,14 @@ export default function HomeScreen({ navigation }) {
           <View style={{
             width: 180,
             height: 220,
-            // backgroundColor:'red',
             marginLeft: 10
           }}>
+            <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/oron.jpg?alt=media&token=350b3e8b-2551-40e6-a59e-72d30e853551' }} style={{
+              resizeMode: 'cover',
+              width: 200,
+              height: 150
+            }} />
             <TouchableOpacity onPress={() => navigation.navigate('Oron')}>
-              <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/oron.jpg?alt=media&token=350b3e8b-2551-40e6-a59e-72d30e853551'}} style={{
-                resizeMode: 'cover',
-                width: 200,
-                height: 150
-
-              }} />
               <Text>
                 Portrait
               </Text>
@@ -358,14 +352,13 @@ export default function HomeScreen({ navigation }) {
             // backgroundColor:'red',
 
           }}>
+            <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ornRoad.jpg?alt=media&token=e4b3e7b1-834c-4f4b-9aba-14f4090c04d7' }} style={{
+              resizeMode: 'cover',
+              width: 190,
+              height: 150,
+              marginLeft: 5
+            }} />
             <TouchableOpacity onPress={() => navigation.navigate('Oran')}>
-              <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ornRoad.jpg?alt=media&token=e4b3e7b1-834c-4f4b-9aba-14f4090c04d7'}} style={{
-                resizeMode: 'cover',
-                width: 190,
-                height: 150,
-                marginLeft: 5
-
-              }} />
               <Text style={{ marginLeft: 10 }}>
                 48 Sheet
               </Text>
@@ -381,13 +374,12 @@ export default function HomeScreen({ navigation }) {
             // backgroundColor:'red',
             marginLeft: 10
           }}>
+            <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ituRoad.jpg?alt=media&token=ecf0d7bc-ff5f-461c-a828-85882b20c8ea' }} style={{
+              resizeMode: 'cover',
+              width: 200,
+              height: 150
+            }} />
             <TouchableOpacity onPress={() => navigation.navigate('Itu')}>
-              <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ituRoad.jpg?alt=media&token=ecf0d7bc-ff5f-461c-a828-85882b20c8ea'}} style={{
-                resizeMode: 'cover',
-                width: 200,
-                height: 150
-
-              }} />
               <Text>
                 48 sheet
               </Text>
@@ -398,7 +390,7 @@ export default function HomeScreen({ navigation }) {
             </TouchableOpacity>
           </View>
         </View>
-        
+
 
       </ScrollView>
 

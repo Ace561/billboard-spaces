@@ -19,8 +19,6 @@ export default function Sheet48({ navigation }) {
             </View>
             <ScrollView horizontal={true}
                 showsHorizontalScrollIndicator={false} style={{
-                    // flexDirection:'row',
-                    //   backgroundColor:'red'
                 }}>
                 <View style={{
                     marginTop: 14, width: 90, height: 30,
@@ -32,10 +30,7 @@ export default function Sheet48({ navigation }) {
                     borderColor: 'gray',
                     alignItems: 'center'
                 }}>
-                    {/* <TouchableOpacity> */}
                     <Text style={{ fontWeight: '500' }}>Akwa Ibom</Text>
-                    {/* </TouchableOpacity> */}
-
                 </View>
             </ScrollView>
             <View style={{
@@ -45,36 +40,31 @@ export default function Sheet48({ navigation }) {
                 <View style={{
                     width: 200,
                     height: 220,
-                    // backgroundColor:'red',
 
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/aaa.jpg?alt=media&token=8967708a-1c6b-4ac7-b32c-a7b9c0cc3a7f' }} style={{
+                        resizeMode: 'cover',
+                        width: 190,
+                        height: 150,
+                        marginLeft: 5
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate('Aqu')}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/aaa.jpg?alt=media&token=8967708a-1c6b-4ac7-b32c-a7b9c0cc3a7f' }} style={{
-                            resizeMode: 'cover',
-                            width: 190,
-                            height: 150,
-                            marginLeft: 5
-
-                        }} />
                         <Text style={{ marginLeft: 10 }}>
                             Abak Road After Federal Secreteriat Uyo
                         </Text>
                     </TouchableOpacity>
-
                 </View>
                 <View style={{
                     width: 180,
                     height: 220,
-                    // backgroundColor:'red',
                     marginLeft: 10
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/point.jpg?alt=media&token=74297a7d-ffe7-45a2-baaa-5b973a7e9b1c' }} style={{
+                        resizeMode: 'stretch',
+                        width: 200,
+                        height: 150,
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate("Point")}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/point.jpg?alt=media&token=74297a7d-ffe7-45a2-baaa-5b973a7e9b1c' }} style={{
-                            resizeMode: 'stretch',
-                            width: 200,
-                            height: 150,
-
-                        }} />
                         <Text>
                             Abak Road By 4 Point After Ikot Ekpene Plaza
                         </Text>
@@ -132,17 +122,14 @@ export default function Sheet48({ navigation }) {
                 <View style={{
                     width: 200,
                     height: 220,
-                    // backgroundColor:'red',
-
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/zzz.jpg?alt=media&token=271e5b1a-8779-4458-9851-434585085be6' }} style={{
+                        resizeMode: 'cover',
+                        width: 190,
+                        height: 150,
+                        marginLeft: 5
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate('Zrt')}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/zzz.jpg?alt=media&token=271e5b1a-8779-4458-9851-434585085be6' }} style={{
-                            resizeMode: 'cover',
-                            width: 190,
-                            height: 150,
-                            marginLeft: 5
-
-                        }} />
                         <Text style={{ marginLeft: 10 }}>
                             Abak Road After Plaza Uyo
                         </Text>
@@ -155,14 +142,12 @@ export default function Sheet48({ navigation }) {
                     // backgroundColor:'red',
                     marginLeft: 10
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/SSSS.jpg?alt=media&token=0c508d05-6579-42af-8d82-da122dd2baac' }} style={{
+                        resizeMode: 'cover',
+                        width: 200,
+                        height: 150,
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate('Brt')}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/SSSS.jpg?alt=media&token=0c508d05-6579-42af-8d82-da122dd2baac' }} style={{
-                            resizeMode: 'cover',
-                            width: 200,
-                            height: 150,
-
-                        }} />
-
                         <Text>
                             Abak Road By State Secrtriat Roundabout Uyo
                         </Text>
@@ -222,14 +207,13 @@ export default function Sheet48({ navigation }) {
                     // backgroundColor:'red',
 
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/akaRd.jpg?alt=media&token=a0281d39-a635-4803-ab86-0adc86f8762c' }} style={{
+                        resizeMode: 'cover',
+                        width: 190,
+                        height: 150,
+                        marginLeft: 5
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate('akaRd')}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/akaRd.jpg?alt=media&token=a0281d39-a635-4803-ab86-0adc86f8762c' }} style={{
-                            resizeMode: 'cover',
-                            width: 190,
-                            height: 150,
-                            marginLeft: 5
-
-                        }} />
                         <Text style={{ marginLeft: 10 }}>
                             Aka Road By Aka Juction Uyo
                         </Text>
@@ -241,16 +225,14 @@ export default function Sheet48({ navigation }) {
                     // backgroundColor:'red',
                     marginLeft: 10
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/sksEd.jpg?alt=media&token=648fdc74-4b9c-4491-9c2f-225bb9f88e18' }} style={{
+                        resizeMode: 'cover',
+                        width: 200,
+                        height: 150,
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate('sksEd')}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/sksEd.jpg?alt=media&token=648fdc74-4b9c-4491-9c2f-225bb9f88e18' }} style={{
-                            resizeMode: 'cover',
-                            width: 200,
-                            height: 150,
-
-                        }} />
-
                         <Text>
-                            Aka Road After To Eket
+                            Aka Road Uyo
                         </Text>
                     </TouchableOpacity>
                 </View>
@@ -265,14 +247,14 @@ export default function Sheet48({ navigation }) {
                     // backgroundColor:'red',
 
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ggg.jpg?alt=media&token=30a4dd0d-b0c7-4408-b0c4-7f187be45cef' }} style={{
+                        resizeMode: 'cover',
+                        width: 190,
+                        height: 150,
+                        marginLeft: 5
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate('ggg')}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ggg.jpg?alt=media&token=30a4dd0d-b0c7-4408-b0c4-7f187be45cef' }} style={{
-                            resizeMode: 'cover',
-                            width: 190,
-                            height: 150,
-                            marginLeft: 5
 
-                        }} />
                         <Text style={{ marginLeft: 10 }}>
                             Atiku Abaubaka
                             Way By State Secretariat Roundabout
@@ -283,16 +265,14 @@ export default function Sheet48({ navigation }) {
                 <View style={{
                     width: 180,
                     height: 220,
-                    // backgroundColor:'red',
                     marginLeft: 10
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/high.jpg?alt=media&token=357be990-d473-4614-b411-eaa6bf1e7d28' }} style={{
+                        resizeMode: 'cover',
+                        width: 200,
+                        height: 150,
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate('high')}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/high.jpg?alt=media&token=357be990-d473-4614-b411-eaa6bf1e7d28' }} style={{
-                            resizeMode: 'cover',
-                            width: 200,
-                            height: 150,
-
-                        }} />
                         <Text>
                             Calabar Itu Highway After Itam Market- Calabar Road
                         </Text>
@@ -306,17 +286,15 @@ export default function Sheet48({ navigation }) {
                 <View style={{
                     width: 200,
                     height: 220,
-                    // backgroundColor:'red',
-
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/fly.jpg?alt=media&token=20f38ccc-d7e6-42d9-9df8-83b3d94ef7b4' }} style={{
+                        resizeMode: 'cover',
+                        width: 190,
+                        height: 150,
+                        marginLeft: 5
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate('fly')}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/fly.jpg?alt=media&token=20f38ccc-d7e6-42d9-9df8-83b3d94ef7b4' }} style={{
-                            resizeMode: 'cover',
-                            width: 190,
-                            height: 150,
-                            marginLeft: 5
 
-                        }} />
                         <Text style={{ marginLeft: 10 }}>
                             Ikot Ekpene Road By After Itam Flyover
                         </Text>
@@ -326,16 +304,15 @@ export default function Sheet48({ navigation }) {
                 <View style={{
                     width: 200,
                     height: 220,
-                    // backgroundColor:'red',
                     marginLeft: 10
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/nnpc.jpg?alt=media&token=af0eeb5e-8d0f-4a49-8649-adb7dfb8c177' }} style={{
+                        resizeMode: 'cover',
+                        width: 190,
+                        height: 150,
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate('Ibb')}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/nnpc.jpg?alt=media&token=af0eeb5e-8d0f-4a49-8649-adb7dfb8c177' }} style={{
-                            resizeMode: 'cover',
-                            width: 190,
-                            height: 150,
 
-                        }} />
                         <Text>
                             Ibb Oposite Ibom Hall Uyo
                         </Text>
@@ -393,20 +370,14 @@ export default function Sheet48({ navigation }) {
                 <View style={{
                     width: 200,
                     height: 220,
-                    // backgroundColor:'red',
-
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ornRoad.jpg?alt=media&token=e4b3e7b1-834c-4f4b-9aba-14f4090c04d7' }} style={{
+                        resizeMode: 'cover',
+                        width: 190,
+                        height: 150,
+                        marginLeft: 5
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate('Oran')}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ornRoad.jpg?alt=media&token=e4b3e7b1-834c-4f4b-9aba-14f4090c04d7' }} style={{
-                            resizeMode: 'cover',
-                            width: 190,
-                            height: 150,
-                            marginLeft: 5
-
-                        }} />
-                        <Text style={{ marginLeft: 10 }}>
-                            48 Sheet
-                        </Text>
                         <Text style={{ marginLeft: 10 }}>
                             Oron Road By Shelter Afrique Uyo, Akwa Ibom
                         </Text>
@@ -416,23 +387,17 @@ export default function Sheet48({ navigation }) {
                 <View style={{
                     width: 180,
                     height: 220,
-                    // backgroundColor:'red',
                     marginLeft: 10
                 }}>
+                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ituRoad.jpg?alt=media&token=ecf0d7bc-ff5f-461c-a828-85882b20c8ea' }} style={{
+                        resizeMode: 'cover',
+                        width: 200,
+                        height: 150
+                    }} />
                     <TouchableOpacity onPress={() => navigation.navigate('Itu')}>
-                        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ituRoad.jpg?alt=media&token=ecf0d7bc-ff5f-461c-a828-85882b20c8ea' }} style={{
-                            resizeMode: 'cover',
-                            width: 200,
-                            height: 150
-
-                        }} />
-                        <Text>
-                            48 sheet
-                        </Text>
                         <Text>
                             Itu Road Junction Uyo, Akwa Ibom
                         </Text>
-
                     </TouchableOpacity>
                 </View>
             </View>
