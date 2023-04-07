@@ -50,7 +50,7 @@ import Uni from './JIA/Uni';
 import Ipa from './JIA/Ipa';
 import { AuthProvider } from './context/authContext';
 import Oil from './Cosmrtic/Oil';
-
+import Recovery from './JIA/Recovery';
 
 
 // const Tab = createBottomTabNavigator()
@@ -62,7 +62,6 @@ function App() {
 
       <NavigationContainer >
         <Stack.Navigator>
-          <Stack.Screen options={{ headerShown: false}} name="oil" component={Oil} />
           <Stack.Screen options={{ headerShown: false }} name="Home" component={HomeScreen} />
           <Stack.Screen options={{}} name="Large format" component={LargeFormat} />
           <Stack.Screen options={{}} name="Back" component={Img1111} />
@@ -72,6 +71,7 @@ function App() {
           <Stack.Screen options={{ title: 'Back' }} name="Img5555" component={Img5555} />
           <Stack.Screen options={{ title: 'Back' }} name="Nwaniba" component={Nwaniba} />
           <Stack.Screen options={{ title: 'Back' }} name="Itu" component={Itu} />
+          <Stack.Screen options={{ headerShown: false}} name="oil" component={Oil} />
           <Stack.Screen options={{ title: 'Back' }} name="Oron" component={Oron} />
           <Stack.Screen options={{ title: 'Back' }} name="Oran" component={Oran} />
           <Stack.Screen options={{ title: 'Back' }} name="Itam" component={Itam} />
@@ -101,6 +101,7 @@ function App() {
           <Stack.Screen options={{ title: 'Back' }} name="Plaza" component={Plaza} />
           <Stack.Screen options={{ title: 'Back' }} name="Iter" component={Iter} />
           <Stack.Screen options={{ title: 'Back' }} name="Uni" component={Uni} />
+          <Stack.Screen options={{ title: 'Back' }} name="Recovery" component={Recovery} />
           <Stack.Screen options={{ title: 'Back' }} name="Uba" component={Uba} />
           <Stack.Screen options={{ title: 'Back' }} name="Ipa" component={Ipa} />
           <Stack.Screen options={{ headerShown: false }} name="sign_up" component={Sign_up} />

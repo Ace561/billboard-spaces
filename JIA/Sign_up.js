@@ -7,26 +7,26 @@ import { AuthContext } from '../context/authContext';
 
 
 
-export default function Sign_up({ navigation }) {  
+export default function Sign_up({ navigation }) {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [username, setUsername] = useState('')
     const { register } = useContext(AuthContext)
     // todo use this function on the signup button
-    function logged(){
-console.log();
-console.log("im here");
+    function logged() {
+        console.log();
+        console.log("im here");
     }
     const handleRegister = () => {
         register(username, email, password)
-          .then(() =>  {
-            navigation.navigate('Add')
-            // navigate to the home screen or show a success message
-          })
-          .catch(error => {
-            alert('Wrong email or password')
-          });
-      };
+            .then(() => {
+                navigation.navigate('Add')
+                // navigate to the home screen or show a success message
+            })
+            .catch(error => {
+                alert('Wrong email or password')
+            });
+    };
     return (
         <View style={styles.main}>
             <View style={{
@@ -44,7 +44,9 @@ console.log("im here");
                 </View>
 
                 <View style={{
-                    marginTop: 30, width: 330, height: 50,
+                    marginTop: 30,
+                    width: '80%',
+                    height: '8%',
                     marginLeft: 30,
                     borderRadius: 17, justifyContent: 'center',
                     backgroundColor: '#F5F5F5', borderWidth: 1,
@@ -52,7 +54,7 @@ console.log("im here");
                 }}>
                     <TextInput
                         style={{
-                            marginLeft: 20, width: 200
+                            marginLeft: 20, width: 300
                         }}
                         placeholder="Enter Full Name"
                         value={username}
@@ -60,7 +62,9 @@ console.log("im here");
                     />
                 </View>
                 <View style={{
-                    marginTop: 20, width: 330, height: 50,
+                    marginTop: 20,
+                    width: '80%',
+                    height: '8%',
                     marginLeft: 30,
                     borderRadius: 17, justifyContent: 'center',
                     backgroundColor: '#F5F5F5',
@@ -69,7 +73,7 @@ console.log("im here");
                 }}>
                     <TextInput
                         style={{
-                            marginLeft: 20, width: 200,
+                            marginLeft: 20, width: 300,
 
                         }}
                         placeholder="Enter Email"
@@ -78,7 +82,9 @@ console.log("im here");
                     />
                 </View>
                 <View style={{
-                    marginTop: 20, width: 330, height: 50,
+                    marginTop: 20,
+                    width: '80%',
+                    height: '8%',
                     marginLeft: 30,
                     borderRadius: 17, justifyContent: 'center',
                     backgroundColor: '#F5F5F5',
@@ -87,7 +93,7 @@ console.log("im here");
                 }}>
                     <TextInput
                         style={{
-                            marginLeft: 20, width: 200,
+                            marginLeft: 20, width: 300,
                         }}
                         placeholder="Enter password"
                         secureTextEntry
@@ -95,12 +101,16 @@ console.log("im here");
                         onChangeText={text => setPassword(text)}
                     />
                 </View>
-                <TouchableOpacity  onPress={
+                <View style={{
+                    paddingTop:'4%'
+                }}>
+                     <TouchableOpacity onPress={
                     handleRegister
                 }>
                     <View style={{
-                        marginTop: 40, width: 330, height: 50,
-                        marginLeft: 30,
+                         width: '80%',
+                         height: 60,
+                         marginLeft: 30,
                         borderRadius: 17, justifyContent: 'center',
                         backgroundColor: '#416FDF',
                         alignItems: 'center',
@@ -112,41 +122,11 @@ console.log("im here");
                         </Text>
                     </View>
                 </TouchableOpacity>
-                {/* <View style={{
-                    alignItems: 'center', marginTop: 40
-                }}>
-                    <Text>
-                        Sign Up with
-                    </Text>
-                </View> */}
-                {/* <View style={{
-                    marginTop: 40,
-                    flexDirection: 'row', justifyContent: 'center'
 
-                }}>
-                    <TouchableOpacity>
-                        <AntDesign name="google" size={30} color="black" />
-                    </TouchableOpacity>
-
-                    <TouchableOpacity>
-                        <AntDesign name="twitter" size={30} color="#6EAEE7" style={{
-                            marginLeft: 30
-                        }} />
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                        <Entypo name="facebook-with-circle" size={30} color="#416FDF" style={{
-                            marginLeft: 30
-                        }} />
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                        <AntDesign name="apple1" size={30} color="black" style={{
-                            marginLeft: 30
-                        }} />
-                    </TouchableOpacity>
-
-                </View> */}
+                </View>
+               
                 <View style={{
-                    flexDirection: 'row', marginTop: 30,
+                    flexDirection: 'row', paddingTop:'4%',
                     justifyContent: 'center'
                 }}>
                     <Text>Already have an account?</Text>
