@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Linking, TouchableOpacity, ScrollView, BackHandler, Alert } from 'react-native'
+import { StyleSheet, Text, View, Linking, TouchableOpacity, ScrollView, BackHandler, Alert} from 'react-native'
 import React from 'react'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
@@ -32,15 +32,14 @@ export default function Add({ navigation }) {
       <View style={{
         flexDirection: 'row',
         backgroundColor: '#ffffff',
-        height: 85
       }}>
         <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-          <View style={{ marginTop: 50, marginLeft: 20, }}>
+          <View style={{ marginTop: 15, marginLeft: 20, }}>
             <AntDesign name="arrowleft" size={24} color="black" />
           </View>
         </TouchableOpacity>
 
-        <Text style={{ marginTop: 50, marginLeft: 20, fontWeight: 'bold', fontSize: 17 }}>Add your billboard</Text>
+        <Text style={{ marginTop: 15, marginLeft: 20, fontWeight: 'bold', fontSize: 17 }}>Add your billboard</Text>
       </View>
 
 
@@ -49,8 +48,8 @@ export default function Add({ navigation }) {
         justifyContent: 'center'
       }}>
         <View style={{
-          width: 350,
-          height: 130,
+          width: '90%',
+          height: 140,
           backgroundColor: '#ffffff',
           marginTop: 30,
           borderRadius: 20,
@@ -81,8 +80,8 @@ export default function Add({ navigation }) {
 
 
         <View style={{
-          width: 350,
-          height: 130,
+          width: '90%',
+          height: 140,
           backgroundColor: '#ffffff',
           marginTop: 10,
           borderRadius: 20,
@@ -112,8 +111,8 @@ export default function Add({ navigation }) {
 
 
         <View style={{
-          width: 350,
-          height: 130,
+          width: '90%',
+          height: 140,
           backgroundColor: '#ffffff',
           marginTop: 10,
           borderRadius: 20,
@@ -143,8 +142,8 @@ export default function Add({ navigation }) {
 
 
         <View style={{
-          width: 350,
-          height: 130,
+          width: '90%',
+          height: 140,
           backgroundColor: '#ffffff',
           marginTop: 10,
           borderRadius: 20,
@@ -173,8 +172,8 @@ export default function Add({ navigation }) {
         </View>
 
         <View style={{
-          width: 350,
-          height: 130,
+          width: '90%',
+          height: 140,
           backgroundColor: '#ffffff',
           marginTop: 10,
           borderRadius: 20,
@@ -206,7 +205,7 @@ export default function Add({ navigation }) {
 
       <View style={{
         // backgroundColor:'red',
-        width: 360,
+        width: '90%',
         height: 50,
         marginTop: 30,
         marginLeft: 10,
@@ -217,7 +216,7 @@ export default function Add({ navigation }) {
           Linking.openURL("mailto:billboardspaces@gmail.com?subject=billboard&")
         )}>
           <View style={{
-            width: 360,
+            width: '100%',
             height: 50,
             backgroundColor: '#ffffff',
             alignItems: 'center',
@@ -235,7 +234,7 @@ export default function Add({ navigation }) {
 
       <View style={{
         // backgroundColor:'red',
-        width: 360,
+        width: '90%',
         height: 50,
         marginTop: 40,
         marginLeft: 10,
@@ -247,7 +246,7 @@ export default function Add({ navigation }) {
           Linking.openURL('tel:+234 7069228187')
         )}>
           <View style={{
-            width: 360,
+            width: '120%',
             height: 50,
             backgroundColor: '#34B7F1',
             alignItems: 'center',

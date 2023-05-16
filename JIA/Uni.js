@@ -29,22 +29,6 @@ export default function Uni() {
                 <Text style={{ marginLeft: 10, fontSize: 23, fontWeight: '300', marginTop: 6 }}>
                     Ikpa Road by Uniuyo Main Campus Uyo, Akwa Ibom
                 </Text>
-
-
-                {/* <View style={{
-          marginTop: 10,
-          width: 90,
-          backgroundColor: 'red',
-          height: 30, alignItems: 'center',
-          justifyContent: 'center',
-          borderRadius: 20,
-          borderColor: '#34B7F1',
-          marginLeft: 280
-        }}>
-          <Text style={{ fontWeight: 'bold' }}>Unavailable</Text>
-        </View> */}
-
-
                 <View style={{
                     marginTop: 10,
                     width: 90,

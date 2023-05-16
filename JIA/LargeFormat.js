@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image } from 'react-native'
 import React from 'react'
+import Component from './Component'
 
 export default function LargeFormat({ navigation }) {
     return (
@@ -33,30 +34,15 @@ export default function LargeFormat({ navigation }) {
                     <Text style={{ fontWeight: '500' }}>Akwa Ibom</Text>
                 </View>
             </ScrollView>
-            <View style={{
-                flexDirection: 'row',
-                marginTop: 20
-            }}>
+            <View style={{marginRight:16}}>
                 <View style={{
-                    width: 200,
-                    height: 220,
-                    // backgroundColor:'red',
-                    marginLeft: 10
+                    flexDirection: 'row',
                 }}>
-                    <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/2222.jpg?alt=media&token=1e6dbe4f-c170-4f75-a6cc-2e2c72f522ab' }} style={{
-                        resizeMode: 'stretch',
-                        width: 200,
-                        height: 150,
-                    }} />
-                    <TouchableOpacity onPress={() => navigation.navigate('Backu')}>
-
-                        <Text>
-                            Large Format
-                        </Text>
-                        <Text>
-                            Airport Road Uyo,  Akw Ibom
-                        </Text>
-                    </TouchableOpacity>
+                    <Component
+                        source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/2222.jpg?alt=media&token=1e6dbe4f-c170-4f75-a6cc-2e2c72f522ab' }}
+                        location="Airport Road Uyo,  Akw Ibom"
+                        navigate='Backu'
+                    />
                 </View>
             </View>
         </View>

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity, TextInput, Alert, BackHandler } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, TextInput, Alert, BackHandler, ActivityIndicator } from 'react-native'
 import React, { useContext } from 'react'
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
@@ -53,12 +53,12 @@ export default function Log_in({ navigation }) {
           <TextInput
             style={{
               marginLeft: 20, width: 300,
-
             }}
             placeholder="Enter Email"
             value={email}
             onChangeText={text => setEmail(text)}
           />
+
         </View>
         <View style={{
           marginTop: 20,
@@ -94,7 +94,7 @@ export default function Log_in({ navigation }) {
           <TouchableOpacity onPress={
             handleLogin
           }>
-            <View style={{
+            <View  style={{
               width: '80%',
               height: 60,
               marginLeft: 30,
