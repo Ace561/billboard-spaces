@@ -39,7 +39,8 @@ export default function Sheet48({ navigation }) {
             <View style={{ marginRight: 16 }}>
                 <View style={{
                     flexDirection: 'row',
-                    marginTop: 20
+                    marginTop: 20,
+                    marginBottom: 15
                 }}>
                     <Component
                         source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/zzz.jpg?alt=media&token=271e5b1a-8779-4458-9851-434585085be6' }}
@@ -50,30 +51,33 @@ export default function Sheet48({ navigation }) {
                     <Component
                         source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/SSSS.jpg?alt=media&token=0c508d05-6579-42af-8d82-da122dd2baac' }}
                         location="Abak Road By State Secrtriat Roundabout Uyo, Akwa Ibom"
-                        width='90%'
+                        width='100%'
                         navigate='Brt'
                         margin={5}
                     />
                 </View>
                 <View style={{
                     flexDirection: 'row',
+                    marginBottom:10,
                 }}>
                     <Component
                         source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/akaRd.jpg?alt=media&token=a0281d39-a635-4803-ab86-0adc86f8762c' }}
                         location="Aka Road By Aka Juction Uyo, Akwa Ibom"
-                        navigate='akaRd' />
+                        navigate='akaRd'
+                         />
 
 
                     <Component
                         source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/sksEd.jpg?alt=media&token=648fdc74-4b9c-4491-9c2f-225bb9f88e18' }}
                         location="Aka Road Uyo, Akwa Ibom"
-                        width='90%'
+                        width='100%'
                         navigate='sksEd'
                         margin={5}
                     />
                 </View>
                 <View style={{
                     flexDirection: 'row',
+                    marginBottom: 30
                 }}>
                     <Component
                         source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ggg.jpg?alt=media&token=30a4dd0d-b0c7-4408-b0c4-7f187be45cef' }}
@@ -84,13 +88,14 @@ export default function Sheet48({ navigation }) {
                     <Component
                         source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/high.jpg?alt=media&token=357be990-d473-4614-b411-eaa6bf1e7d28' }}
                         location="Calabar Itu Highway After Itam Market- Calabar Road, Uyo, Akwa Ibom"
-                        width='90%'
+                        width='100%'
                         navigate='high'
                         margin={5}
                     />
                 </View>
                 <View style={{
                     flexDirection: 'row',
+                    marginBottom:15,
                 }}>
                     <Component
                         source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/fly.jpg?alt=media&token=20f38ccc-d7e6-42d9-9df8-83b3d94ef7b4' }}
@@ -101,13 +106,14 @@ export default function Sheet48({ navigation }) {
                     <Component
                         source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/nnpc.jpg?alt=media&token=af0eeb5e-8d0f-4a49-8649-adb7dfb8c177' }}
                         location="Ibb Oposite Ibom Hall Uyo, Akwa Ibom"
-                        width='90%'
+                        width='100%'
                         navigate='Ibb'
                         margin={5}
                     />
                 </View>
                 <View style={{
                     flexDirection: 'row',
+                    marginBottom:15,
                 }}>
                     <Component
                         source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ornRoad.jpg?alt=media&token=e4b3e7b1-834c-4f4b-9aba-14f4090c04d7' }}

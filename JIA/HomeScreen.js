@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View, ScrollView, Image, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, Image, TouchableOpacity, ActivityIndicator } from 'react-native'
 import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import Component from './Component';
 
 export default function HomeScreen({ navigation }) {
+  
   return (
     <View style={styles.main}>
       <View style={{
@@ -81,7 +82,8 @@ export default function HomeScreen({ navigation }) {
             backgroundColor: '#F5F5F5',
             borderWidth: 1,
             borderColor: 'gray',
-            alignItems: 'center'
+            alignItems: 'center',
+
           }}>
             <TouchableOpacity onPress={() => navigation.navigate('48 sheet')}>
               <Text style={{ fontWeight: '500' }}>48 sheet</Text>
@@ -124,7 +126,8 @@ export default function HomeScreen({ navigation }) {
             backgroundColor: '#F5F5F5',
             borderWidth: 1,
             borderColor: 'gray',
-            alignItems: 'center'
+            alignItems: 'center',
+            marginRight:10
           }}>
             <TouchableOpacity onPress={() => navigation.navigate('Unipole')}>
               <Text style={{ fontWeight: '500' }}>Unipole</Text>
@@ -150,6 +153,7 @@ export default function HomeScreen({ navigation }) {
           <View style={{
             flexDirection: 'row',
             marginTop: 20,
+            marginBottom:10
           }}>
             <Component
               source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/111.jpg?alt=media&token=52f24aed-0a4c-4cf8-b559-8dd68b32191e' }}
@@ -170,6 +174,7 @@ export default function HomeScreen({ navigation }) {
           </View>
           <View style={{
             flexDirection: 'row',
+            marginBottom:14
           }}>
             <Component
               source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/aka.jpg?alt=media&token=ebfe604b-c7e0-43af-a09c-a2d1d6f3c57a' }}
@@ -181,13 +186,14 @@ export default function HomeScreen({ navigation }) {
               source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/6666.jpg?alt=media&token=bc0f416b-371e-4c97-9594-d838d743acfb' }}
               size="48 sheet"
               location="Calabar Itu Road Before Health Center Uyo, Akwa Ibom"
-              width='90%'
+              width='100%'
               navigate='Img6666'
               margin={5}
             />
           </View>
           <View style={{
             flexDirection: 'row',
+            marginBottom:10
           }}>
             <Component
               source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/5555.jpg?alt=media&token=c4a63a7f-bdcc-4adc-bc87-cfcc6f24cb34' }}
@@ -206,6 +212,7 @@ export default function HomeScreen({ navigation }) {
           </View>
           <View style={{
             flexDirection: 'row',
+            marginBottom:10
           }}>
             <Component
               source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/itam.png?alt=media&token=f81618f9-44ca-484e-8929-a6fcf6d0aa08' }}
@@ -217,13 +224,14 @@ export default function HomeScreen({ navigation }) {
               source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/oron.jpg?alt=media&token=350b3e8b-2551-40e6-a59e-72d30e853551' }}
               size="Portrait"
               location="Oron Road By Ntekim Primary School Uyo, Akwa Ibom"
-              width='90%'
+              width='100%'
               navigate='Oron'
               margin={5}
             />
           </View>
           <View style={{
             flexDirection: 'row',
+            marginBottom:10
           }}>
             <Component
               source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ornRoad.jpg?alt=media&token=e4b3e7b1-834c-4f4b-9aba-14f4090c04d7' }}
@@ -241,9 +249,6 @@ export default function HomeScreen({ navigation }) {
             />
           </View>
         </View>
-
-
-
       </ScrollView>
 
     </View>
@@ -253,6 +258,6 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   main: {
     flex: 1,
-
   }
 })
+

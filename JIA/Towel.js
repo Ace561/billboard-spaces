@@ -13,7 +13,7 @@ export default function Towel() {
                 <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/towel.jpg?alt=media&token=d12aaea6-b483-4867-a91b-6139a22005cc' }}
                     style={{
                         width: '100%',
-                        height: 250,
+                        height: 290,
                     }}
                 />
             </View>
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     },
     Total: {
         backgroundColor: '#ffffff',
-        height: 300,
+        height: "100%",
         marginTop: 20
     }
 })

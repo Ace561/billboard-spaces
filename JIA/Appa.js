@@ -21,7 +21,7 @@ export default function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const data = await getWeather('San Francisco');
+      const data = await getWeather('');
       setWeather(data);
     }
     fetchData();

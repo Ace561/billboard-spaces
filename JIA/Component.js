@@ -32,4 +32,3 @@ export default function Component(props) {
     </>
   )
 }
-const styles = StyleSheet.create({})

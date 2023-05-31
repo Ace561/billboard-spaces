@@ -8,7 +8,7 @@ import { AntDesign } from '@expo/vector-icons';
 export default function Add({ navigation }) {
   useEffect(() => {
     const backAction = () => {
-      Alert.alert('Hold on!', 'Are you sure you want to go back?', [
+     console.log('Hold on!', 'Are you sure you want to go back?', [
         {
           text: 'Cancel',
           onPress: () => null,

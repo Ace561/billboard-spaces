@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity, Linking, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity, Linking } from 'react-native'
 import React from 'react'
 import { FontAwesome } from '@expo/vector-icons';
 
 
 export default function Add() {
   return (
-    <ScrollView style={styles.main}>
+    <View style={styles.main}>
       <View style={{
         marginTop: 20
       }}>
@@ -14,13 +14,12 @@ export default function Add() {
           style={{
             width: '100%',
             height: 200,
-            // resizeMode:'contain'
           }}
         />
       </View>
       <View style={styles.Total}>
         <Text style={{ marginLeft: 10, fontWeight: '300', fontSize: 23, marginTop: 15 }}>
-          Unipole
+        Unipole
         </Text>
         <Text style={{ marginLeft: 10, fontSize: 23, fontWeight: '300', marginTop: 6 }}>
           Itam After Health Center Uyo, Akwa Ibom
@@ -28,7 +27,7 @@ export default function Add() {
         <View style={styles.buttons}>
           <View style={styles.whatsapp}>
             <TouchableOpacity onPress={() => (
-              Linking.openURL("whatsapp://send?phone=+234 8100652910&text=Hi good day i want to verify the Unipole at Itam After Health Center Uyo")
+              Linking.openURL("whatsapp://send?phone=+234 8100652910&text=Hi good day i want to verify the Large format at Airport Road Uyo")
             )}>
               <View style={styles.verify}>
                 <Text style={{ color: '#34B7F1' }}>Verify the site</Text>
@@ -46,9 +45,10 @@ export default function Add() {
             </TouchableOpacity>
           </View>
         </View>
+
       </View>
 
-    </ScrollView>
+    </View>
   )
 }
 
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   },
   Total: {
     backgroundColor: '#ffffff',
-    height: 280,
+    height: "100%",
     marginTop: 20
   }
 })

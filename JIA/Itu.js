@@ -22,7 +22,7 @@ export default function Add() {
                     48 sheet
                 </Text>
                 <Text style={{ marginLeft: 10, fontSize: 23, fontWeight: '300', marginTop: 6 }}>
-                    Itu Road  Junction Uyo, Akwa Ibom
+                    Itu Road Junction Uyo, Akwa Ibom
                 </Text>
                 <View style={styles.buttons}>
                     <View style={styles.whatsapp}>
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     },
     Total: {
         backgroundColor: '#ffffff',
-        height: 250,
+        height: "100%",
         marginTop: 20
     }
 })

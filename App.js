@@ -51,26 +51,29 @@ import Iter from './JIA/Iter';
 import Uba from './JIA/Uba';
 import Uni from './JIA/Uni';
 import Ipa from './JIA/Ipa';
-import { AuthProvider } from './context/authContext';
+// import { AuthProvider } from './context/authContext';
 import Oil from './Cosmrtic/Oil';
 import Recovery from './JIA/Recovery';
 import Component from './JIA/Component';
+import { AuthProvider } from './context/authComponent';
 import UserContext from './JIA/UserContext';
 import LoginScreen from './JIA/LoginScreen';
 
 // const Tab = createBottomTabNavigator()
 const Stack = createNativeStackNavigator()
 function App() {
+  
   return (
     // <Onbouding/>
-    // <UserProvider>
-      <AuthProvider>
+    <UserProvider>
+      {/* <ComponentProvider> */}
+        <AuthProvider>
         <NavigationContainer >
           <Stack.Navigator>
-            <Stack.Screen options={{ headerShown: false }} name="Appa" component={Appa} />
-            <Stack.Screen options={{ headerShown: false }} name="LoginScreen" component={LoginScreen} />
-            <Stack.Screen options={{ headerShown: false }} name="UserContext" component={UserContext} />
             <Stack.Screen options={{ headerShown: false }} name="Home" component={HomeScreen} />
+            <Stack.Screen options={{ headerShown: false }} name="LoginScreen" component={LoginScreen} />
+            <Stack.Screen options={{ headerShown: false }} name="Appa" component={Appa} />
+            <Stack.Screen options={{ headerShown: false }} name="UserContext" component={UserContext} />
             <Stack.Screen options={{ headerShown: false }} name="ProfileScreen" component={ProfileScreen} />
             <Stack.Screen options={{ headerShown: false }} name="comp" component={Component} />
             <Stack.Screen options={{}} name="Large format" component={LargeFormat} />
@@ -124,8 +127,9 @@ function App() {
             <Stack.Screen options={{}} name="48 sheet" component={Sheet48} />
           </Stack.Navigator>
         </NavigationContainer>
-      </AuthProvider>
-    // </UserProvider>
+        </AuthProvider>
+      {/* /</ComponentProvider> */}
+    </UserProvider>
   )
 };
 export default App;

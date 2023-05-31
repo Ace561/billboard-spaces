@@ -38,7 +38,7 @@ export default function Portrait({ navigation }) {
       <View style={{ marginRight: 16 }}>
         <View style={{
           flexDirection: 'row',
-          marginTop: 20
+          marginTop: 20,
         }}>
           <Component
             source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/5555.jpg?alt=media&token=c4a63a7f-bdcc-4adc-bc87-cfcc6f24cb34' }}
@@ -49,13 +49,14 @@ export default function Portrait({ navigation }) {
           <Component
             source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/itam.png?alt=media&token=f81618f9-44ca-484e-8929-a6fcf6d0aa08' }}
             location="Itam Junction By Itam Market Uyo, Akwa Ibom"
-            width='90%'
+            width='100%'
             navigate='Itam'
             margin={5}
           />
         </View>
         <View style={{
           flexDirection: 'row',
+          marginBottom:15
         }}>
           <Component
             source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/oron.jpg?alt=media&token=350b3e8b-2551-40e6-a59e-72d30e853551' }}
@@ -65,13 +66,14 @@ export default function Portrait({ navigation }) {
           <Component
             source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/afaha.jpg?alt=media&token=44fd895e-1e5b-4e30-8709-5ea0a326002d' }}
             location="Eket Oron Road By Afaha Eket Junction Uyo, Akwa Ibom"
-            width='90%'
+            width='100%'
             navigate='Afa'
             margin={5}
           />
         </View>
         <View style={{
           flexDirection: 'row',
+          marginBottom:15
         }}>
           <Component
             source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/towel.jpg?alt=media&token=d12aaea6-b483-4867-a91b-6139a22005cc' }}
@@ -81,14 +83,15 @@ export default function Portrait({ navigation }) {
           <Component
             source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/shelter.jpg?alt=media&token=9a01020e-7051-4d5c-b43e-a78be1dcda41' }}
             location="Oron Road By Shelter Afrique Uyo, Akwa Ibom"
-            width='90%'
+            width='100%'
             navigate='afriq'
             margin={5}
           />
         </View>
         <View style={{
           flexDirection: 'row',
-        }}>
+          marginBottom:28
+          }}>
           <Component
             source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/hotel.jpg?alt=media&token=db1b99c6-225b-4f8f-a306-d7d3ed36303f' }}
             location="Nwaniba Road By  Le-meridian Hotel Junction Uyo, Akwa Ibom"
@@ -97,7 +100,7 @@ export default function Portrait({ navigation }) {
           <Component
             source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ibb.jpg?alt=media&token=5cd84b49-ea17-4da6-bd46-b40f558dcc27' }}
             location="Aka Road By Ibbway Uyo, Akwa Ibom"
-            width='90%'
+            width='100%'
             navigate='way'
             margin={5}
           />

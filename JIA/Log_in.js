@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity, TextInput, Alert, BackHandler, ActivityIndicator } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, TextInput, KeyboardAvoidingView, ActivityIndicator } from 'react-native'
 import React, { useContext } from 'react'
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
@@ -6,22 +6,28 @@ import { Entypo } from '@expo/vector-icons';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { AuthContext } from '../context/authContext';
+import { AuthComponent } from '../context/authComponent';
 
 export default function Log_in({ navigation }) {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const { login } = useContext(AuthContext)
+  const { login } = useContext(AuthComponent)
+  const [showPassword, setShowPassword] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  // const { login } = useContext(AuthContext)
   // todo use this function on the login button
   const handleLogin = () => {
+    setIsLoading(true);
     login(email, password)
       .then(() => {
-        navigation.navigate('Add')
+        setIsLoading(false);
+        navigation.navigate('Add');
       })
       .catch(error => {
-        // console.log(error.response.data);
-        alert('Wrong email or password')
-        // error('error message')
+        console.log(error.response.data);
+        setIsLoading(false);
+        alert('Wrong email or password');
       });
   };
 
@@ -52,7 +58,7 @@ export default function Log_in({ navigation }) {
         }}>
           <TextInput
             style={{
-              marginLeft: 20, width: 300,
+              marginLeft: 20,
             }}
             placeholder="Enter Email"
             value={email}
@@ -72,13 +78,23 @@ export default function Log_in({ navigation }) {
         }}>
           <TextInput
             style={{
-              marginLeft: 20, width: 300,
+              marginLeft: 20,
             }}
             placeholder="Enter password"
-            secureTextEntry
+            secureTextEntry={!showPassword}
             value={password}
             onChangeText={text => setPassword(text)}
           />
+           <TouchableOpacity
+            style={styles.passwordToggle}
+            onPress={() => setShowPassword(!showPassword)}
+          >
+            <Feather
+              name={showPassword ? 'eye' : 'eye-off'}
+              size={24}
+              color="gray"
+            />
+          </TouchableOpacity>
         </View>
         <View style={{
           marginTop: 19, flexDirection: 'row-reverse',
@@ -94,7 +110,7 @@ export default function Log_in({ navigation }) {
           <TouchableOpacity onPress={
             handleLogin
           }>
-            <View  style={{
+            <View style={{
               width: '80%',
               height: 60,
               marginLeft: 30,
@@ -104,9 +120,13 @@ export default function Log_in({ navigation }) {
               borderWidth: 1,
               borderColor: 'gray',
             }}>
-              <Text style={{ color: 'white' }}>
-                Sign In
-              </Text>
+              {isLoading ? (
+                <ActivityIndicator color="white" />
+              ) : (
+                <Text style={{ color: 'white' }}>
+                  Sign In
+                </Text>
+              )}
             </View>
 
           </TouchableOpacity>
@@ -146,4 +166,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
+  passwordToggle: {
+    position: 'absolute',
+    right: 15,
+    top: '50%',
+    transform: [{ translateY: -12 }],
+  },
 })
+
+
+
+

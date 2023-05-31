@@ -40,7 +40,7 @@ export default function LargeFormat({ navigation }) {
                 }}>
                     <Component
                         source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/2222.jpg?alt=media&token=1e6dbe4f-c170-4f75-a6cc-2e2c72f522ab' }}
-                        location="Airport Road Uyo,  Akw Ibom"
+                        location="Airport Road Uyo, Akwa Ibom"
                         navigate='Backu'
                     />
                 </View>
