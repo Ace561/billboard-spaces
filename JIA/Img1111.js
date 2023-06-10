@@ -1,33 +1,24 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity, Linking } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View, Image, TouchableOpacity, Linking, Animated } from 'react-native';
+import React, { useRef, useState } from 'react';
 import { FontAwesome } from '@expo/vector-icons';
 
-
-export default function Add() {
+export default function Add({ route, navigation }) {
+  const { imageUrl, text, text2 } = route.params.page;
+  const imageUri = imageUrl ? imageUrl : 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/111.jpg?alt=media&token=52f24aed-0a4c-4cf8-b559-8dd68b32191e';
   return (
     <View style={styles.main}>
-      <View style={{
-        marginTop: 20
-      }}>
-
-        <Image source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/111.jpg?alt=media&token=52f24aed-0a4c-4cf8-b559-8dd68b32191e' }}
-          style={{
-            width: '100%',
-            height: 200,
-          }}
-        />
-      </View>
+          <Image source={{ uri: imageUri }} style={{width: '100%', height:200 }} />
       <View style={styles.Total}>
         <Text style={{ marginLeft: 10, fontWeight: '300', fontSize: 23, marginTop: 15 }}>
-        Unipole
+          {text ? text : "Text here"}
         </Text>
         <Text style={{ marginLeft: 10, fontSize: 23, fontWeight: '300', marginTop: 6 }}>
-          Itam After Health Center Uyo, Akwa Ibom
+          {text2 ? text2 : "Text 22"}
         </Text>
         <View style={styles.buttons}>
           <View style={styles.whatsapp}>
             <TouchableOpacity onPress={() => (
-              Linking.openURL("whatsapp://send?phone=+234 8100652910&text=Hi good day i want to verify the Large format at Airport Road Uyo")
+              Linking.openURL("whatsapp://send?phone=+2348100652910&text=Hi good day, I want to verify the Large format at Airport Road, Uyo")
             )}>
               <View style={styles.verify}>
                 <Text style={{ color: '#34B7F1' }}>Verify the site</Text>
@@ -37,7 +28,7 @@ export default function Add() {
           </View>
           <View style={styles.telebutton}>
             <TouchableOpacity onPress={() => (
-              Linking.openURL('tel:+234 8100652910')
+              Linking.openURL('tel:+2348100652910')
             )}>
               <View style={styles.telephone}>
                 <Text style={{ color: 'white' }}>Mobile number</Text>
@@ -45,16 +36,23 @@ export default function Add() {
             </TouchableOpacity>
           </View>
         </View>
-
       </View>
-
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
   main: {
-    flex: 1
+    flex: 1,
+  },
+  imageContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  image: {
+    width: '100%',
+    height: '100%',
   },
   buttons: {
     width: '100%',
@@ -96,4 +94,6 @@ const styles = StyleSheet.create({
     height: "100%",
     marginTop: 20
   }
-})
+});
+
+

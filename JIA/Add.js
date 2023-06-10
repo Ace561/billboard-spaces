@@ -49,7 +49,7 @@ export default function Add({ navigation }) {
       }}>
         <View style={{
           width: '90%',
-          height: 140,
+          height: 170,
           backgroundColor: '#ffffff',
           marginTop: 30,
           borderRadius: 20,
@@ -81,7 +81,7 @@ export default function Add({ navigation }) {
 
         <View style={{
           width: '90%',
-          height: 140,
+          height: 150,
           backgroundColor: '#ffffff',
           marginTop: 10,
           borderRadius: 20,
@@ -161,7 +161,7 @@ export default function Add({ navigation }) {
             width: 20, height: 20, backgroundColor: '#34B7F1', borderRadius: 100, justifyContent: 'center', alignItems: 'center',
             marginTop: 20, marginLeft: -10
           }}>
-            <Text style={{ color: '#ffffff' }}>4</Text>
+            <Text style={{ color: '#ffffff' }}>5</Text>
           </View>
           <Text style={{
             marginTop: -16,

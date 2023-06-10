@@ -3,6 +3,9 @@ import React from 'react'
 import Component from './Component'
 
 export default function LargeFormat({ navigation }) {
+    const data = [
+        { text: "Large format", text2: "Airport Road Uyo, Akwa Ibom", id: 1, imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/2222.jpg?alt=media&token=1e6dbe4f-c170-4f75-a6cc-2e2c72f522ab' }
+    ]
     return (
         <View>
             <View style={{
@@ -34,15 +37,24 @@ export default function LargeFormat({ navigation }) {
                     <Text style={{ fontWeight: '500' }}>Akwa Ibom</Text>
                 </View>
             </ScrollView>
-            <View style={{marginRight:16}}>
+            <View style={{ marginRight: 16 }}>
                 <View style={{
                     flexDirection: 'row',
                 }}>
-                    <Component
-                        source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/2222.jpg?alt=media&token=1e6dbe4f-c170-4f75-a6cc-2e2c72f522ab' }}
-                        location="Airport Road Uyo, Akwa Ibom"
-                        navigate='Backu'
-                    />
+                    {data.map(page => {
+                        if (page.id ==1)
+                        return(
+                            <Component
+                            key={page.id}
+                            page={page}
+                            source={{uri : page.imageUrl}}
+                            location={page.text2}
+                            navigate='Back'
+                            margin={5}
+                            
+                            />
+                        )
+                    })}
                 </View>
             </View>
         </View>

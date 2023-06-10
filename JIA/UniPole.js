@@ -3,6 +3,13 @@ import React from 'react'
 import Component from './Component'
 
 export default function UniPole({ navigation }) {
+    const data = [
+        { text: "Unipole", text2: "Abak Road By Fedral Secretariat After Plaza Uyo, Akwa Ibom", imageUrl: "https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/akaRd.jpg?alt=media&token=a0281d39-a635-4803-ab86-0adc86f8762c", id: 1 },
+        { text: "Unipole", text2: "Abak Uyo Road After Ekom Iman Flyover (Obasanjo Road) Uyo, Akwa Ibom", imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/abak.jpg?alt=media&token=c7cdfc68-f0e6-4969-bc4b-4981e3b66647', id: 2 },
+        { text: "Unipole", text2: "Abak Road By Fedral Secretariat After Plaza Uyo, Akwa Ibom", imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/kk.jpg?alt=media&token=bfe15f7e-1b8e-4e27-bc6d-a5535eb67be1', id: 3 },
+        { text: "Unipole", text2: "Ikot Ekpene Road By Forte Oil After Ibom Plaza Uyo, Akwa Ibom", imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ikot.jpg?alt=media&token=dcc6b903-a488-464e-baf8-23139493260b', id: 4 },
+        { text: "Unipole", text2: "Itam After Health Center Uyo, Akwa Ibom", imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/111.jpg?alt=media&token=52f24aed-0a4c-4cf8-b559-8dd68b32191e', id: 5 }
+    ]
     return (
         <ScrollView>
             <View style={{
@@ -42,47 +49,62 @@ export default function UniPole({ navigation }) {
                 <View style={{
                     flexDirection: 'row',
                     marginTop: 20,
-                    marginBottom:30                
+                    marginBottom: 30
                 }}>
-                    <Component
-                        source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/akaRd.jpg?alt=media&token=a0281d39-a635-4803-ab86-0adc86f8762c' }}
-                        location="Abak Road By Fedral Secretariat After Plaza Uyo, Akwa Ibom"
-                        navigate='Akar'
-                    />
-                    <Component
-                        source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/abak.jpg?alt=media&token=c7cdfc68-f0e6-4969-bc4b-4981e3b66647' }}
-                        location="Abak Uyo Road After Ekom Iman Flyover (Obasanjo Road) Uyo, Akwa Ibom"
-                        width='100%'
-                        navigate='abak'
-                        margin={5}
-                    />
+                    {data.map(page => {
+                        if (page.id == 1 || page.id == 2) {
+                            return (
+                                <Component
+                                    key={page.id}
+                                    page={page}
+                                    source={{ uri: page.imageUrl }}
+                                    location={page.text2}
+                                    navigate='Back'
+                                    margin={5}
+                                />
+                            )
+                        }
+                    })}
                 </View>
                 <View style={{
                     flexDirection: 'row',
                     marginBottom:13
                 }}>
-                    <Component
-                        source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/kk.jpg?alt=media&token=bfe15f7e-1b8e-4e27-bc6d-a5535eb67be1' }}
-                        location="Abak Road By Fedral Secretariat After Plaza Uyo, Akwa Ibom"
-                        navigate='Ferd'
-                    />
-                    <Component
-                        source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ikot.jpg?alt=media&token=dcc6b903-a488-464e-baf8-23139493260b' }}
-                        location="Ikot Ekpene Road By Forte Oil After Ibom Plaza Uyo, Akwa Ibom"
-                        width='100%'
-                        navigate='Ikot'
-                        margin={5}
-                    />
+                    {data.map(page => {
+                        if (page.id === 3 || page.id === 4) {
+                            return (
+                                <Component
+                                    key={page.id}
+                                    page={page}
+                                    source={{ uri: page.imageUrl }}
+                                    location={page.text2}
+                                    navigate='Back'
+                                    margin={5}
+                                />
+                            )
+
+                        }
+                    })}
                 </View>
                 <View style={{
                     flexDirection: 'row',
                     marginBottom:10
                 }}>
-                    <Component
-                        source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/111.jpg?alt=media&token=52f24aed-0a4c-4cf8-b559-8dd68b32191e' }}
-                        location="Itam After Health Center Uyo, Akwa Ibom"
-                        navigate='Back'
-                    />
+                    {data.map(page => {
+                        if (page.id === 5) {
+                            return (
+                                <Component
+                                    key={page.id}
+                                    page={page}
+                                    source={{ uri: page.imageUrl }}
+                                    location={page.text2}
+                                    navigate='Back'
+                                    margin={5}
+                                />
+                            )
+                        }
+                    })}
+
                 </View>
             </View>
         </ScrollView>

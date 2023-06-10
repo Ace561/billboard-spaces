@@ -5,7 +5,6 @@ import { Feather } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { useState } from 'react';
 import { AuthContext } from '../context/authContext';
-import { AuthComponent } from '../context/authComponent';
 
 
 
@@ -16,7 +15,7 @@ export default function Sign_up({ navigation }) {
     const [showPassword, setShowPassword] = useState(false)
     const [isLoading, setIsLoading] = useState(false);
     // const { register } = useContext(AuthContext)
-    const { register } = useContext(AuthComponent)
+    const { register } = useContext(AuthContext)
     // todo use this function on the signup button
     function logged() {
         console.log();

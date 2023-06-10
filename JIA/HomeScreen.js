@@ -3,9 +3,21 @@ import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import Component from './Component';
+const data = [
+  { text: "Unipole", text2: "Itam Adjacent Health Center Uyo, Akwa Ibom", id: 1, imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/111.jpg?alt=media&token=52f24aed-0a4c-4cf8-b559-8dd68b32191e' },
+  { text: "Large Format", text2: "Airport Road Uyo, Akwa Ibom", id: 2, imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/2222.jpg?alt=media&token=1e6dbe4f-c170-4f75-a6cc-2e2c72f522ab' },
+  { text: "48 sheet", text2: "Aka Road before Aka Junction Uyo, Akwa Ibom", id: 3, imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/aka.jpg?alt=media&token=ebfe604b-c7e0-43af-a09c-a2d1d6f3c57a' },
+  { text: "48 sheet", text2: "Calabar Itu Road Before Health Center Uyo, Akwa Ibom", id: 4, imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/6666.jpg?alt=media&token=bc0f416b-371e-4c97-9594-d838d743acfb' },
+  { text: "Portrait", text2: "Itam Market Uyo, Akwa Ibom", id: 5, imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/5555.jpg?alt=media&token=c4a63a7f-bdcc-4adc-bc87-cfcc6f24cb34' },
+  { text: "48 sheet", text2: "Nwaniba By Annua Hospital Uyo, Akwa Ibom", id: 6, imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/nwaniba.jpg?alt=media&token=c15e1eb0-c10d-4985-9629-429463012096' },
+  { text: "Portrait", text2: "Itam Junction By Itam Market Uyo, Akwa Ibom", id: 7, imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/itam.png?alt=media&token=f81618f9-44ca-484e-8929-a6fcf6d0aa08' },
+  { text: "Portrait", text2: "Oron Road By Ntekim Primary School Uyo, Akwa Ibom", id: 8, imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/oron.jpg?alt=media&token=350b3e8b-2551-40e6-a59e-72d30e853551' },
+  { text: "48 sheet", text2: "Oron Road By Shelter Afrique Uyo, Akwa Ibom", id: 10, imageUrl: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ornRoad.jpg?alt=media&token=e4b3e7b1-834c-4f4b-9aba-14f4090c04d7' },
+  { text: "48 sheet", text2: "Itu Road Junction Uyo, Akwa Ibom", id: 11, imageUrl:  'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ituRoad.jpg?alt=media&token=ecf0d7bc-ff5f-461c-a828-85882b20c8ea' },
+];
 
 export default function HomeScreen({ navigation }) {
-  
+
   return (
     <View style={styles.main}>
       <View style={{
@@ -115,7 +127,7 @@ export default function HomeScreen({ navigation }) {
             alignItems: 'center'
           }}>
             <TouchableOpacity onPress={() => navigation.navigate('Large format')}>
-              <Text style={{ fontWeight: '500' }}>Large formart </Text>
+              <Text style={{ fontWeight: '500' }}>Large format</Text>
             </TouchableOpacity>
           </View>
           <View style={{
@@ -127,7 +139,7 @@ export default function HomeScreen({ navigation }) {
             borderWidth: 1,
             borderColor: 'gray',
             alignItems: 'center',
-            marginRight:10
+            marginRight: 10
           }}>
             <TouchableOpacity onPress={() => navigation.navigate('Unipole')}>
               <Text style={{ fontWeight: '500' }}>Unipole</Text>
@@ -153,105 +165,117 @@ export default function HomeScreen({ navigation }) {
           <View style={{
             flexDirection: 'row',
             marginTop: 20,
-            marginBottom:10
           }}>
-            <Component
-              source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/111.jpg?alt=media&token=52f24aed-0a4c-4cf8-b559-8dd68b32191e' }}
-              size="Unipole"
-              location="Itam Adjacent Health Center Uyo, Akwa Ibom"
-              navigate='Back' />
-
-
-            <Component
-              source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/2222.jpg?alt=media&token=1e6dbe4f-c170-4f75-a6cc-2e2c72f522ab' }}
-              size="Large Format"
-              location="Airport Road Uyo, Akwa Ibom"
-              width='90%'
-              navigate='Backu'
-              margin={5}
-            />
-
+            {data.map(page => {
+              if (page.id === 1 || page.id === 2) { // Render Component for objects with id 3 and 4
+                return (
+                  <Component
+                    key={page.id}
+                    page={page}
+                    source={{ uri: page.imageUrl }}
+                    size={page.text}
+                    location={page.text2}
+                    navigate='Back'
+                    margin={5}
+                  />
+                );
+              } else {
+                return null; // Render nothing for other objects
+              }
+            })}
           </View>
           <View style={{
             flexDirection: 'row',
-            marginBottom:14
+            marginBottom: 13
           }}>
-            <Component
-              source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/aka.jpg?alt=media&token=ebfe604b-c7e0-43af-a09c-a2d1d6f3c57a' }}
-              size="48 sheet"
-              location="Aka Road before Aka Junction Uyo, Akwa Ibom"
-              navigate='Aka' />
-
-            <Component
-              source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/6666.jpg?alt=media&token=bc0f416b-371e-4c97-9594-d838d743acfb' }}
-              size="48 sheet"
-              location="Calabar Itu Road Before Health Center Uyo, Akwa Ibom"
-              width='100%'
-              navigate='Img6666'
-              margin={5}
-            />
+            {data.map(page => {
+              if (page.id === 3 || page.id === 4) { // Render Component for objects with id 3 and 4
+                return (
+                  <Component
+                    key={page.id}
+                    page={page}
+                    source={{ uri: page.imageUrl }}
+                    size={page.text}
+                    location={page.text2}
+                    navigate='Back'
+                    margin={5}
+                  />
+                );
+              } else {
+                return null; // Render nothing for other objects
+              }
+            })}
           </View>
           <View style={{
             flexDirection: 'row',
-            marginBottom:10
+            marginBottom: 10
           }}>
-            <Component
-              source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/5555.jpg?alt=media&token=c4a63a7f-bdcc-4adc-bc87-cfcc6f24cb34' }}
-              size="Portrait"
-              location="Itam Market Uyo, Akwa Ibom"
-              navigate='Img5555' />
-
-            <Component
-              source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/nwaniba.jpg?alt=media&token=c15e1eb0-c10d-4985-9629-429463012096' }}
-              size="48 sheet"
-              location="Nwaniba By Annua Hospital Uyo, Akwa Ibom"
-              width='90%'
-              navigate='Nwaniba'
-              margin={5}
-            />
+            {data.map(page => {
+              if (page.id === 5 || page.id === 6) { // Render Component for objects with id 3 and 4
+                return (
+                  <Component
+                    key={page.id}
+                    page={page}
+                    source={{ uri: page.imageUrl }}
+                    size={page.text}
+                    location={page.text2}
+                    navigate='Back'
+                    margin={5}
+                  />
+                );
+              } else {
+                return null; // Render nothing for other objects
+              }
+            })}
           </View>
           <View style={{
             flexDirection: 'row',
-            marginBottom:10
+            marginBottom: 10
           }}>
-            <Component
-              source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/itam.png?alt=media&token=f81618f9-44ca-484e-8929-a6fcf6d0aa08' }}
-              size=" Portrait"
-              location="Itam Junction By Itam Market Uyo, Akwa Ibom"
-              navigate='Itam' />
-
-            <Component
-              source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/oron.jpg?alt=media&token=350b3e8b-2551-40e6-a59e-72d30e853551' }}
-              size="Portrait"
-              location="Oron Road By Ntekim Primary School Uyo, Akwa Ibom"
-              width='100%'
-              navigate='Oron'
-              margin={5}
-            />
+            {data.map(page => {
+              if (page.id === 7 || page.id === 8) { // Render Component for objects with id 3 and 4
+                return (
+                  <Component
+                    key={page.id}
+                    page={page}
+                    source={{ uri: page.imageUrl }}
+                    size={page.text}
+                    location={page.text2}
+                    navigate='Back'
+                    margin={5}
+                  />
+                );
+              } else {
+                return null; // Render nothing for other objects
+              }
+            })}
           </View>
           <View style={{
             flexDirection: 'row',
-            marginBottom:10
+            marginBottom: 10
           }}>
-            <Component
-              source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ornRoad.jpg?alt=media&token=e4b3e7b1-834c-4f4b-9aba-14f4090c04d7' }}
-              size="48 sheet"
-              location="Oron Road By Shelter Afrique Uyo, Akwa Ibom"
-              navigate='Oran' />
-
-            <Component
-              source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/react-9b3c2.appspot.com/o/ituRoad.jpg?alt=media&token=ecf0d7bc-ff5f-461c-a828-85882b20c8ea' }}
-              size="48 sheet"
-              location="Itu Road Junction Uyo, Akwa Ibom"
-              width='90%'
-              navigate='Itu'
-              margin={5}
-            />
+            {data.map(page => {
+              if (page.id === 10 || page.id === 11) { // Render Component for objects with id 3 and 4
+                return (
+                  <Component
+                    key={page.id}
+                    page={page}
+                    source={{ uri: page.imageUrl }}
+                    size={page.text}
+                    location={page.text2}
+                    navigate='Back'
+                    margin={5}
+                  />
+                );
+              } else {
+                return null; // Render nothing for other objects
+              }
+            })}
           </View>
         </View>
-      </ScrollView>
+      </ScrollView >
 
-    </View>
+    </View >
   )
 }
 
@@ -259,5 +283,4 @@ const styles = StyleSheet.create({
   main: {
     flex: 1,
   }
-})
-
+});
