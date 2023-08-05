@@ -2,14 +2,14 @@ import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image, Button, Re
 import React, { useState, useEffect } from 'react';
 import Component from './Component'
 import { MaterialIcons } from '@expo/vector-icons';
-import networkStatusListener from './NetworkStatus'; // Replace with the correct path
 import { getDatabase, onValue, ref, on, query } from 'firebase/database';
+import networkStatusListener from './NetworkStatus'; // Replace with the correct path
 import { initializeApp } from 'firebase/app';
 import { firebaseConfig } from '../firebaseConfig';
 export default function Portrait({ navigation }) {
   const [firebaseData, setFirebaseData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedLocation, setSelectedLocation] = useState('Akwa Ibom');
+  const [selectedLocation, setSelectedLocation] = useState('Rivers');
   const [modalVisible, setModalVisible] = useState(false);
   const [isConnected, setIsConnected] = useState(true);
   const [isInternetReachable, setIsInternetReachable] = useState(true);
@@ -41,10 +41,12 @@ export default function Portrait({ navigation }) {
     // Any additional data refresh logic can go here
     setIsRefreshing(false);
   };
+
+
   useEffect(() => {
     const app = initializeApp(firebaseConfig);
     const database = getDatabase(app);
-    const databaseRef = ref(database, 'portrait');
+    const databaseRef = ref(database, 'SpectacularBillboard');
     const dataQuery = query(databaseRef);
 
     onValue(dataQuery, (snapshot) => {
@@ -75,7 +77,7 @@ export default function Portrait({ navigation }) {
   const seeAll = (location) => {
     setSelectedLocation(location);
     setModalVisible(false); // Close the modal
-    navigation.navigate('Portrait', { state: location });
+    navigation.navigate('SpectacularBillboard', { state: location });
     // ...
   };
 
@@ -820,31 +822,14 @@ export default function Portrait({ navigation }) {
               marginLeft: 20,
               borderRadius: 5,
               justifyContent: 'center',
-              backgroundColor: selectedLocation === 'Akwa Ibom' ? '#a9a9a9' : 'white',
+              backgroundColor: selectedLocation === 'Rivers' ? '#a9a9a9' : 'white',
               borderWidth: 1,
               borderColor: 'gray',
               alignItems: 'center'
             }}
-            onPress={() => onLocationChange('Akwa Ibom')}
+            onPress={() => onLocationChange('Rivers')}
           >
-            <Text style={{ fontWeight: '400' }}>Akwa Ibom</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              marginTop: 14,
-              width: 90,
-              height: 30,
-              marginLeft: 20,
-              borderRadius: 5,
-              justifyContent: 'center',
-              backgroundColor: selectedLocation === 'Abia' ? '#a9a9a9' : 'white',
-              borderWidth: 1,
-              borderColor: 'gray',
-              alignItems: 'center'
-            }}
-            onPress={() => onLocationChange('Abia')}
-          >
-            <Text style={{ fontWeight: '400' }}>Abia</Text>
+            <Text style={{ fontWeight: '400' }}>Rivers</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
@@ -871,40 +856,6 @@ export default function Portrait({ navigation }) {
               marginLeft: 20,
               borderRadius: 5,
               justifyContent: 'center',
-              backgroundColor: selectedLocation === 'Ebonyi' ? '#a9a9a9' : 'white',
-              borderWidth: 1,
-              borderColor: 'gray',
-              alignItems: 'center'
-            }}
-            onPress={() => seeAll('Ebonyi')}
-          >
-            <Text style={{ fontWeight: '400' }}>Ebonyi</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              marginTop: 14,
-              width: 90,
-              height: 30,
-              marginLeft: 20,
-              borderRadius: 5,
-              justifyContent: 'center',
-              backgroundColor: selectedLocation === 'Enugu' ? '#a9a9a9' : 'white',
-              borderWidth: 1,
-              borderColor: 'gray',
-              alignItems: 'center'
-            }}
-            onPress={() => seeAll('Enugu')}
-          >
-            <Text style={{ fontWeight: '400' }}>Enugu</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              marginTop: 14,
-              width: 90,
-              height: 30,
-              marginLeft: 20,
-              borderRadius: 5,
-              justifyContent: 'center',
               borderWidth: 1,
               borderColor: 'gray',
               alignItems: 'center'
@@ -914,7 +865,6 @@ export default function Portrait({ navigation }) {
             <Text style={{ fontWeight: '400' }}>see all</Text>
           </TouchableOpacity>
         </ScrollView>
-
         <View style={{ marginRight: 16, marginTop: 10 }}>
           {loading ? (
             <ActivityIndicator style={{ marginTop: 150 }} color={'#a9a9a9'} size='large' />

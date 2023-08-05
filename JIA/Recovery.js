@@ -34,45 +34,46 @@ export default function Recovery() {
             <Text style={styles.text2}>your password.</Text>
             {/* <View> */}
             <View style={{
-                marginTop: 20,
-                width: '80%',
-                height: '8%',
-                borderRadius: 17,
-                justifyContent: 'center',
-                alignItems: 'center',
-                backgroundColor: '#F5F5F5',
-                borderBottomWidth: 1,
-                borderColor: 'gray',
-            }}>
-                <TextInput
-                    placeholder="Enter Email Address"
-                    value={email}
-                    onChangeText={text => setEmail(text)}
-                    placeholderTextColor={'gray'}
-                />
-            </View>
-            <TouchableOpacity onPress={logged} style={{
-                width:'45%',
-                height:47,
-                marginTop:20,
-                
-            }}>
-                 <View style={{
-                borderRadius: 27,
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderWidth: 1,
-                borderColor: 'gray',
-                backgroundColor: '#5f9ea0',
-                flex:1
-            }} >
-                        <Text >
-                            send
-                        </Text>
+          marginTop: 20,
+          width: '80%',
+          height: '8%',
+          marginLeft: 30,
+          borderRadius: 17, justifyContent: 'center',
+          backgroundColor: '#F5F5F5',
+          borderWidth: 1,
+          borderColor: 'gray'
+        }}>
+          <TextInput
+            style={{
+              marginLeft: 20,
+            }}
+            placeholder="Enter Email"
+            onChangeText={(text) => setEmail(text)}
+          />
 
-            </View>
+        </View>
+            <TouchableOpacity onPress={logged} style={{
+                width: '45%',
+                height: 47,
+                marginTop: 20,
+
+            }}>
+                <View style={{
+                    borderRadius: 27,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    borderWidth: 1,
+                    borderColor: 'gray',
+                    backgroundColor: '#5f9ea0',
+                    flex: 1
+                }} >
+                    <Text >
+                        send
+                    </Text>
+
+                </View>
             </TouchableOpacity>
-           
+
         </View>
     )
 }
@@ -109,3 +110,5 @@ const styles = StyleSheet.create({
         fontWeight: '500'
     }
 })
+
+

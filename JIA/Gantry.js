@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image, Button, RefreshControl, ActivityIndicator, Modal } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image, Button, ActivityIndicator, RefreshControl, Modal } from 'react-native'
 import React, { useState, useEffect } from 'react';
 import Component from './Component'
-import { MaterialIcons } from '@expo/vector-icons';
 import networkStatusListener from './NetworkStatus'; // Replace with the correct path
+import { MaterialIcons } from '@expo/vector-icons';
 import { getDatabase, onValue, ref, on, query } from 'firebase/database';
 import { initializeApp } from 'firebase/app';
 import { firebaseConfig } from '../firebaseConfig';
@@ -41,10 +41,11 @@ export default function Portrait({ navigation }) {
     // Any additional data refresh logic can go here
     setIsRefreshing(false);
   };
+
   useEffect(() => {
     const app = initializeApp(firebaseConfig);
     const database = getDatabase(app);
-    const databaseRef = ref(database, 'portrait');
+    const databaseRef = ref(database, 'Gantry');
     const dataQuery = query(databaseRef);
 
     onValue(dataQuery, (snapshot) => {
@@ -75,7 +76,7 @@ export default function Portrait({ navigation }) {
   const seeAll = (location) => {
     setSelectedLocation(location);
     setModalVisible(false); // Close the modal
-    navigation.navigate('Portrait', { state: location });
+    navigation.navigate('Gantry', { state: location });
     // ...
   };
 
@@ -837,65 +838,14 @@ export default function Portrait({ navigation }) {
               marginLeft: 20,
               borderRadius: 5,
               justifyContent: 'center',
-              backgroundColor: selectedLocation === 'Abia' ? '#a9a9a9' : 'white',
+              backgroundColor: selectedLocation === 'Rivers' ? '#a9a9a9' : 'white',
               borderWidth: 1,
               borderColor: 'gray',
               alignItems: 'center'
             }}
-            onPress={() => onLocationChange('Abia')}
+            onPress={() => onLocationChange('Rivers')}
           >
-            <Text style={{ fontWeight: '400' }}>Abia</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              marginTop: 14,
-              width: 90,
-              height: 30,
-              marginLeft: 20,
-              borderRadius: 5,
-              justifyContent: 'center',
-              backgroundColor: selectedLocation === 'Edo' ? '#a9a9a9' : 'white',
-              borderWidth: 1,
-              borderColor: 'gray',
-              alignItems: 'center'
-            }}
-            onPress={() => seeAll('Edo')}
-          >
-            <Text style={{ fontWeight: '400' }}>Edo</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              marginTop: 14,
-              width: 90,
-              height: 30,
-              marginLeft: 20,
-              borderRadius: 5,
-              justifyContent: 'center',
-              backgroundColor: selectedLocation === 'Ebonyi' ? '#a9a9a9' : 'white',
-              borderWidth: 1,
-              borderColor: 'gray',
-              alignItems: 'center'
-            }}
-            onPress={() => seeAll('Ebonyi')}
-          >
-            <Text style={{ fontWeight: '400' }}>Ebonyi</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              marginTop: 14,
-              width: 90,
-              height: 30,
-              marginLeft: 20,
-              borderRadius: 5,
-              justifyContent: 'center',
-              backgroundColor: selectedLocation === 'Enugu' ? '#a9a9a9' : 'white',
-              borderWidth: 1,
-              borderColor: 'gray',
-              alignItems: 'center'
-            }}
-            onPress={() => seeAll('Enugu')}
-          >
-            <Text style={{ fontWeight: '400' }}>Enugu</Text>
+            <Text style={{ fontWeight: '400' }}>River</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
@@ -914,7 +864,6 @@ export default function Portrait({ navigation }) {
             <Text style={{ fontWeight: '400' }}>see all</Text>
           </TouchableOpacity>
         </ScrollView>
-
         <View style={{ marginRight: 16, marginTop: 10 }}>
           {loading ? (
             <ActivityIndicator style={{ marginTop: 150 }} color={'#a9a9a9'} size='large' />

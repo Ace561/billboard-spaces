@@ -4,8 +4,12 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { useEffect } from 'react';
 import { AntDesign } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
-export default function Add({ navigation }) {
+
+export default function Add() {
+  const navigation = useNavigation()
+  
   useEffect(() => {
     const backAction = () => {
      console.log('Hold on!', 'Are you sure you want to go back?', [
@@ -124,7 +128,7 @@ export default function Add({ navigation }) {
             marginLeft: 20,
             fontWeight: '400'
           }}>
-            Billboard Size
+            Billboard Sizes
           </Text>
           <View style={{
             width: 20, height: 20, backgroundColor: '#34B7F1', borderRadius: 100, justifyContent: 'center', alignItems: 'center',
@@ -161,45 +165,15 @@ export default function Add({ navigation }) {
             width: 20, height: 20, backgroundColor: '#34B7F1', borderRadius: 100, justifyContent: 'center', alignItems: 'center',
             marginTop: 20, marginLeft: -10
           }}>
-            <Text style={{ color: '#ffffff' }}>5</Text>
-          </View>
-          <Text style={{
-            marginTop: -16,
-            marginLeft: 20,
-          }}>
-            fill in your company name and contact information. if you don't own a  company 
-          </Text>
-        </View>
-
-        <View style={{
-          width: '90%',
-          height: 140,
-          backgroundColor: '#ffffff',
-          marginTop: 10,
-          borderRadius: 20,
-          borderWidth: 1,
-          borderColor: '#34B7F1',
-        }}>
-          <Text style={{
-            marginTop: 20,
-            marginLeft: 20,
-            fontWeight: '400'
-          }}>
-            Company name and Contact information          </Text>
-          <View style={{
-            width: 20, height: 20, backgroundColor: '#34B7F1', borderRadius: 100, justifyContent: 'center', alignItems: 'center',
-            marginTop: 20, marginLeft: -10
-          }}>
             <Text style={{ color: '#ffffff' }}>4</Text>
           </View>
           <Text style={{
             marginTop: -16,
             marginLeft: 20,
           }}>
-            fill in your company name and contact information. if you don't own a  company 
+            Fill in your company name and contact information (If any).
           </Text>
         </View>
-
       </View>
 
 
@@ -213,7 +187,7 @@ export default function Add({ navigation }) {
 
       }}>
         <TouchableOpacity onPress={() => (
-          Linking.openURL("mailto:billboardspaces@gmail.com?subject=billboard&")
+          Linking.openURL("mailto:billboardspacesng@gmail.com?subject=billboard&")
         )}>
           <View style={{
             width: '100%',
@@ -227,7 +201,7 @@ export default function Add({ navigation }) {
             borderColor: '#34B7F1'
           }}>
             <Text style={{ color: '#34B7F1' }}>Submmit your mail</Text>
-            <MaterialCommunityIcons name="gmail" size={24} color="#34B7F1" style={{ marginLeft: 5 }} />
+            <MaterialCommunityIcons name="gmail" size={24} color="#34B7F1" style={{ marginLeft: 4}} />
           </View>
         </TouchableOpacity>
       </View>
